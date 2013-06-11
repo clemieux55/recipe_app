@@ -1,4 +1,18 @@
 RecipeApp::Application.routes.draw do
+  get "recipes/index"
+
+  get "recipes/create"
+
+  get "recipes/destroy"
+
+  get "recipes/new"
+
+  get "recipes/show"
+
+  get "recipes/edit"
+
+  get "recipes/update"
+
   get "pages/index"
 
   # The priority is based upon order of creation:
