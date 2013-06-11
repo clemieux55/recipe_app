@@ -3,7 +3,6 @@ class CreateRecipes < ActiveRecord::Migration
     create_table :recipes do |t|
       t.string :title
       t.string :author
-      t.integer :recipe_id
 
       t.timestamps
     end

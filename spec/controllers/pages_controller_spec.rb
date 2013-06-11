@@ -12,7 +12,7 @@ describe PagesController do
 
   	it 'checks if index page has content welcome' do
   		page.should have_content('Welcome')
-  		save_and_open_page
+
   	end
 
   end

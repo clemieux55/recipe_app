@@ -15,7 +15,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: recipe_app_development
+  database: recipe_application_development
   pool: 5
   username:
   password:
@@ -41,7 +41,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: recipe_app_test
+  database: recipe_application_test
   pool: 5
   username:
   password:
@@ -49,7 +49,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: recipe_app_production
+  database: recipe_application_production
   pool: 5
   username:
   password:
