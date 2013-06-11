@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RecipeApp</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<header class="navbar">
+	<ul class="navbar-inner">
+		<li>
+			<button type="submit" class="btn-large btn-inverse" href="pages/index">Home</button>
+		</li>
+		<li>
+			<button type="submit" class="btn-large btn-inverse" href="recipes/new">Add Recipe</button>
+		</li>
+		<li>
+			<button type="submit" class="btn-large btn-inverse" href="#">Browse</button>
+		</li>
+		<li>
+			<button type="submit" class="btn-large btn-inverse" href="#">Categories</button>
+		</li>
+		<li class="search-bar pull-right">
+			<input type="text" class="search-box" placeholder="Search"></input>
+			<button class="btn btn-success" type="submit" href="#">Search</button>
+		</li>
+	</ul>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
