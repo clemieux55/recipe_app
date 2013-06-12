@@ -1,4 +1,6 @@
 RecipeApp::Application.routes.draw do
+  devise_for :users
+
   get "recipes/index"
 
   get "recipes/create"
