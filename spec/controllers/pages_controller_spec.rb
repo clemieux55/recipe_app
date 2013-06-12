@@ -10,10 +10,7 @@ describe PagesController do
   		expect(page.status_code).to eql(200)
   	end
 
-  	it 'checks if index page has content welcome' do
-  		page.should have_content('Welcome')
 
-  	end
 
   end
 end
