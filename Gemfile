@@ -25,6 +25,7 @@ group :test, :development do
 	gem 'rspec-rails'
 	gem 'capybara'
 	gem 'factory_girl_rails'
+	gem 'lorem-ipsum'
 end
 
   gem 'uglifier', '>= 1.0.3'

@@ -1,15 +1,18 @@
 header {
 	height: 100px;
-	width:1300px;
+	width:1956px;
 
 }
 
-.navbar {
+div.user-nav {
+padding: 20px;
+
 
 }
 
-h1 {
+h1.row {
 	text-align: center;
+	width: 1956px;
 
 }
 
@@ -34,7 +37,7 @@ button.btn.btn-success {
 h1 {
 	background-color: pink;
 	height:100px;
-	width: 1300px;
+	width: 1454px;
 	padding: 30px;
 
 }
@@ -42,14 +45,14 @@ h1 {
 div.row {
 	background-color: antiquewhite;
 	height:450px;
-	width: 1300px;
+	width: 1956px;
 	padding: 30px;
 
 
 	div.bottom-row {
 		background-color: lightblue;
 		height:200px;
-		width:1300px;
+		width:1956px;
 
 	}
 
