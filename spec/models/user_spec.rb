@@ -18,7 +18,12 @@ describe User do
 		it 'will not add a new user if password does not match me is invalid' do 
 			user = FactoryGirl.build(:user, :password => 'invalid', :password_confirmation => 'veryvalid')
 			expect(user.save).to be_false
+		end
 
+		it 'checks if user.find retrieves correct info' do
+			user = FactoryGirl.create(:user)
+			user_id = user.id
+			expect(User.find(user_id).email).to eql('clemieux598@gmail.com')
 		end
 	end
 end
