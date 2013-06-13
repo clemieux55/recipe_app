@@ -5,7 +5,18 @@ FactoryGirl.define do
   	email 'clemieux598@gmail.com'
   	password 'chris666'
   	password_confirmation 'chris666'
-  	remember_me 'hello'
-
   end
 end
+
+
+
+FactoryGirl.define do 
+	sequence(:random_password) {|n| n = rand(100), "#{LoremIpsum.generate}#{n}" }
+	factory :many_users do
+		email { EmailGenerator.generate }
+		password { generate(:random_password) }
+		password_confirmation "#{:random_password}"
+		remember_me "No way"
+	end
+end
+
