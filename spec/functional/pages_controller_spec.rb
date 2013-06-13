@@ -11,7 +11,6 @@ describe RecipesController do
     it 'should have the button home' do 
       visit root_path
       page.should have_content('Welcome')
-
     end
   end
 end

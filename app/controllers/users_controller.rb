@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
 	def index
-		@users = User.all
+		@users = Users.all
 	end
 
 	def new
@@ -14,8 +14,25 @@ class UsersController < ApplicationController
 	end
 
 	def log_in
+		@user = User.find(params[:email, :password])
+		if @user.exist?
+			flash[:notice] = "Successfully logged in!"
+		else
+			redirect_to new_user_session_path
+		end
+	end
 
+	def show
+		@user = User.find(params[:id])
 
 	end
 
+	def create 
+		@user = User.new(params[:users])
+			if @user.save?
+			  redirect_to @user, :notice => 'User successfully created!'
+			else 
+				render action: "edit"
+		end
+	end													
 end
