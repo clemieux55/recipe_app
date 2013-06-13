@@ -9,5 +9,7 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
 
-  validates_presence_of :email, :password, :password_confirmation, :remember_me
+  validates_presence_of :email, :password, :password_confirmation
+
+
 end

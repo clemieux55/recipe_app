@@ -6,7 +6,6 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'pry'
 gem 'devise'
 gem 'launchy'
 
@@ -25,6 +24,11 @@ group :test, :development do
 	gem 'rspec-rails'
 	gem 'capybara'
 	gem 'factory_girl_rails'
+	gem 'lorem-ipsum'
+  gem 'shoulda'
+  gem 'pry'
+  gem 'shoulda-matchers'
+  gem 'valid_attribute'
 end
 
   gem 'uglifier', '>= 1.0.3'

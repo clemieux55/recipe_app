@@ -15,11 +15,10 @@ describe User do
 			expect(user.save).to be_false
 		end
 
-		it 'will not add a new user if remember me is invalid' do 
-			user = FactoryGirl.build(:user, :remember_me => '')
+		it 'will not add a new user if password does not match me is invalid' do 
+			user = FactoryGirl.build(:user, :password => 'invalid', :password_confirmation => 'veryvalid')
 			expect(user.save).to be_false
 
-			end
-
+		end
 	end
 end
