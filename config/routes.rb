@@ -3,7 +3,12 @@ RecipeApp::Application.routes.draw do
 
   get "pages/index"
 
-  resources :recipes
+  resources :recipes do 
+    resources :ingredients, :only => [:post, :show]
+  end
+
+
+
 
   resources :pages, :only => [:show, :index]
   # The priority is based upon order of creation:

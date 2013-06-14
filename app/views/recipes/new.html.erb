@@ -1,2 +1,13 @@
 <h1>Add Delishishness</h1>
+<%= simple_form_for @recipe do |f| %>
+	<%= f.input :title %>
+	<%= f.input :description %>
+<%= f.simple_fields_for :ingredients do |i| %>
+	<%= i.input :name %>
+	<% end %>
+	<%= f.button :submit %>
+<% end %>
 
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>

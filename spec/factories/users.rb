@@ -9,7 +9,6 @@ FactoryGirl.define do
 end
 
 
-
 FactoryGirl.define do 
 	sequence(:random_password) {|n| n = rand(100), "#{LoremIpsum.generate}#{n}" }
 	factory :many_users do
@@ -20,3 +19,9 @@ FactoryGirl.define do
 	end
 end
 
+FactoryGirl.define do 
+	factory :sign_in do 
+  	email 'clemieux598@gmail.com'
+  	password 'chris666'
+  end
+end

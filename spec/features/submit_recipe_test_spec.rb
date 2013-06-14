@@ -2,37 +2,48 @@ require 'spec_helper'
 
 describe "Recipe" do 
 	describe "GET /recipes" do 
-		it "has a link to add a recipe" do 
-			visit root_path
-			page.should have_link('Add Recipe')
-		end
 
-		it 'will only let a registered user add a recipe' do
+		it 'will not let guest create recipe' do
 			visit root_path
 			click_on 'Add Recipe'
-			page.should have_content('You must register to create a recipe')
+			page.should have_content('You must register to create recipe!')
 		end
 
-		it 'allows register user access add recipe form' do 
-			user = FactoryGirl.build(:user)
+		it 'only allows registered users access to add recipes' do 
 			visit root_path
+			user = FactoryGirl.create(:user)
 			fill_in 'Email', :with => user.email
 			fill_in 'Password', :with => user.password
-			click_on 'Add Recipe'
-			page.should have_content('Add a recipe!')
-		end
-	end
-
-	describe "POST /recipes" do 
-		recipe = FactoryGirl.build(:recipe)
-		it 'has a field for title' do 
-			visit new_recipe_path
-			fill_in 'Title', :with => recipe.title
-			fill_in 'Description', :with => recipe.description 
-			click_button 'Add Recipe'
-			page.should have_content("#{recipe.title} successfully created!")
+			click_on 'Log In'
+			click_link 'Add Recipe'
+			page.should have_content('Add Delishishness')
 		end
 	end
 end
 
+describe "POST /recipe" do 
+	describe 'allows registered users to add a recipe' do 
+		before :each do 
+			visit root_path
+			user = FactoryGirl.create(:user)
+			fill_in 'Email', :with => user.email
+			fill_in 'Password', :with => user.password
+			click_on 'Log In'
+		end
 
+		it 'allows user to navigate to home page' do 
+			click_on 'Add Recipe'
+			fill_in 'Title', :with => 'butter'
+			fill_in 'Description', :with => 'Hope you like butter'
+			fill_in 'recipe_ingredients_attributes_0_name', :with => 'butter'
+			fill_in 'recipe_ingredients_attributes_1_name', :with => 'butter'
+			fill_in 'recipe_ingredients_attributes_2_name', :with => 'butter'
+			fill_in 'recipe_ingredients_attributes_3_name', :with => 'butter'
+			fill_in 'recipe_ingredients_attributes_4_name', :with => 'butter'
+			fill_in 'recipe_ingredients_attributes_5_name', :with => 'butter'
+			click_on 'Create Recipe'
+			page.should have_content("Recipe Successfully Created!")
+
+		end
+	end
+end
