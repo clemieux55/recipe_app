@@ -4,15 +4,17 @@ class RecipesController < ApplicationController
   end
 
   def show
-    @recipe = Recipe.find(params[:recipe_id])
+    @recipe = Recipe.find(params[:id])
   end
 
   def create
-    @recipe = Recipe.new
+    @recipe = Recipe.new(params[:recipe])
+
     if @recipe.save
-      redirect_to recipe_path_id
+      redirect_to @recipe
       flash[:notice] = 'Recipe Successfully Created!'
     else
+      flash[:notice] = 'Your food needs a title!'
       render "new"
     end
   end
@@ -21,7 +23,15 @@ class RecipesController < ApplicationController
   end
 
   def new
-    @recipe = Recipe.new
+    if user_signed_in?
+      @recipe = Recipe.new
+        6.times do 
+        @recipe.ingredients.build
+      end
+    else
+      redirect_to root_path
+      flash[:notice] = "You must register to create recipe!"
+    end
   end
 
   def edit

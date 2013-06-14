@@ -1,21 +1,14 @@
 RecipeApp::Application.routes.draw do
   devise_for :users
 
-  get "recipes/index"
-
-  get "recipes/create"
-
-  get "recipes/destroy"
-
-  get "recipes/new"
-
-  get "recipes/show"
-
-  get "recipes/edit"
-
-  get "recipes/update"
-
   get "pages/index"
+
+  resources :recipes do 
+    resources :ingredients, :only => [:post, :show]
+  end
+
+
+
 
   resources :pages, :only => [:show, :index]
   # The priority is based upon order of creation:
