@@ -43,7 +43,21 @@ describe "POST /recipe" do
 			fill_in 'recipe_ingredients_attributes_5_name', :with => 'butter'
 			click_on 'Create Recipe'
 			page.should have_content("Recipe Successfully Created!")
+		end
 
+		it 'will not allow the user to create recipe without a title' do 
+			click_on 'Add Recipe'
+			fill_in 'Title', :with => ''
+			fill_in 'Description', :with => 'Hope you like butter'
+			fill_in 'recipe_ingredients_attributes_0_name', :with => 'butter'
+			fill_in 'recipe_ingredients_attributes_1_name', :with => 'butter'
+			fill_in 'recipe_ingredients_attributes_2_name', :with => 'butter'
+			fill_in 'recipe_ingredients_attributes_3_name', :with => 'butter'
+			fill_in 'recipe_ingredients_attributes_4_name', :with => 'butter'
+			fill_in 'recipe_ingredients_attributes_5_name', :with => 'butter'
+			click_on 'Create Recipe'
+			save_and_open_page
+			page.should have_content('Your food needs a title!')
 		end
 	end
 end

@@ -14,6 +14,7 @@ class RecipesController < ApplicationController
       redirect_to @recipe
       flash[:notice] = 'Recipe Successfully Created!'
     else
+      flash[:notice] = 'Your food needs a title!'
       render "new"
     end
   end
