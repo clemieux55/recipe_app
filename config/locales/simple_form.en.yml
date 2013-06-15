@@ -2,7 +2,7 @@ en:
   helpers:
     submit:
       recipe:
-        create: 'Create Recipe'  
+        create: 'Create Recipe'
   simple_form:
     "yes": 'Yes'
     "no": 'No'

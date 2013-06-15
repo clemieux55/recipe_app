@@ -19,7 +19,7 @@ class UsersController < ApplicationController
 		if @user.exist?
 			flash[:notice] = "Successfully logged in!"
 		else
-			redirect_to new_user_session_path
+			root_path
 		end
 	end
 

@@ -9,7 +9,7 @@ class RecipesController < ApplicationController
 
   def create
     @recipe = Recipe.new(params[:recipe])
-
+    @ingredient = @recipe.ingredients.build(params[:ingredient])
     if @recipe.save
       redirect_to @recipe
       flash[:notice] = 'Recipe Successfully Created!'
