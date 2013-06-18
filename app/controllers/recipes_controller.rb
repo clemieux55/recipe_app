@@ -1,42 +1,24 @@
 class RecipesController < ApplicationController
-  def index
-    @recipes = Recipe.all
-  end
+  
+	def new
+		@recipe = Recipe.new
+		unless user_signed_in?
+			flash[:notice] = 'You must register to create recipe!'
+		end
+	end
 
-  def show
-    @recipe = Recipe.find(params[:id])
+  def index
+  	@recipes = Recipe.all
   end
 
   def create
-    @recipe = Recipe.new(params[:recipe])
-    @ingredient = @recipe.ingredients.build(params[:ingredient])
-    if @recipe.save
-      redirect_to @recipe
-      flash[:notice] = 'Recipe Successfully Created!'
-    else
-      flash[:notice] = 'Your food needs a title!'
-      render "new"
-    end
+  	@recipe = Recipe.new(params[:recipe])
+  	if @recipe.save 
+  		redirect_to ingredients_path
+  		flash[:notice] = 'Now choose the ingredients'
+  	else
+  		flash[:notice] = 'Please fill in appropriate fields'
+  	end
   end
-
-  def destroy
-  end
-
-  def new
-    if user_signed_in?
-      @recipe = Recipe.new
-        6.times do 
-        @recipe.ingredients.build
-      end
-    else
-      redirect_to root_path
-      flash[:notice] = "You must register to create recipe!"
-    end
-  end
-
-  def edit
-  end
-
-  def update
-  end
+  
 end

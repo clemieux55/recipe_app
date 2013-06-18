@@ -22,7 +22,7 @@ describe "pages/index" do
 
   describe 'user log in' do 
     before :each do 
-      FactoryGirl.create(:user)
+      FactoryGirl.build(:user)
     end
       
     it 'allows the user to sign in' do

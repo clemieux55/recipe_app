@@ -9,6 +9,8 @@ gem 'pg'
 gem 'devise'
 gem 'launchy'
 gem 'simple_form'
+gem 'ransack'
+gem 'kaminari'
 
 
 # Gems used only for assets and not required

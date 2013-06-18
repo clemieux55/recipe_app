@@ -1,3 +1,26 @@
 // Place all the styles related to the ingredients controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.search-container {
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+	width: 35%;
+	border: solid #380000 2px;
+	background-color: #FBE7C3;
+	text-decoration: none;
+
+	a {
+		color: black;
+		text-decoration: none;
+
+	}
+}
+
+div.seperator {
+	border-top: dotted black 1px;
+	length: 10%;
+
+}

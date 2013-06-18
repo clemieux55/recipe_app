@@ -11,7 +11,7 @@ describe "Recipe" do
 
 		it 'only allows registered users access to add recipes' do 
 			visit root_path
-			user = FactoryGirl.create(:user)
+			user = FactoryGirl.build(:user)
 			fill_in 'Email', :with => user.email
 			fill_in 'Password', :with => user.password
 			click_on 'Log In'
@@ -25,7 +25,7 @@ describe "POST /recipe" do
 	describe 'allows registered users to add a recipe' do 
 		before :each do 
 			visit root_path
-			user = FactoryGirl.create(:user)
+			user = FactoryGirl.build(:user)
 			fill_in 'Email', :with => user.email
 			fill_in 'Password', :with => user.password
 			click_on 'Log In'
@@ -33,16 +33,18 @@ describe "POST /recipe" do
 
 		it 'will not allow the user to create recipe without a title' do 
 			click_on 'Add Recipe'
-			fill_in 'Title', :with => ''
-			fill_in 'Description', :with => 'Hope you like butter'
-			fill_in 'recipe_ingredients_attributes_0_name', :with => 'butter'
-			fill_in 'recipe_ingredients_attributes_1_name', :with => 'butter'
-			fill_in 'recipe_ingredients_attributes_2_name', :with => 'butter'
-			fill_in 'recipe_ingredients_attributes_3_name', :with => 'butter'
-			fill_in 'recipe_ingredients_attributes_4_name', :with => 'butter'
-			fill_in 'recipe_ingredients_attributes_5_name', :with => 'butter'
+			fill_in 'recipe_title', :with => ''
+			fill_in 'recipe_description', :with => 'Hope you like butter'
 			click_on 'Create Recipe'
-			page.should have_content('Your food needs a title!')
+			page.should have_content('Please fill in appropriate fields')
+		end
+
+		it 'will let the user add a recipe if registered' do 
+			click_on 'Add Recipe'
+			fill_in 'recipe_title', :with => 'Lasagna'
+			fill_in 'recipe_description', :with => 'Garfields FAvorite'
+			click_on 'Create Recipe'
+			page.should have_content('Now choose the ingredients')
 		end
 	end
 end

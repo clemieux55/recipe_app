@@ -3,11 +3,18 @@ RecipeApp::Application.routes.draw do
 
   get "pages/index"
 
-  resources :recipes do 
-    resources :ingredients, :only => [:post, :show]
+resources :recipes do 
+  resources :ingredients 
+end
+
+resources :ingredients
+
+resources :ingredients do 
+  collection do 
+    match 'search' => 'ingredient#search', :via => [:get, :post], :as => :search
   end
-
-
+  root to: 'ingredients#index'
+end
 
 
   resources :pages, :only => [:show, :index]

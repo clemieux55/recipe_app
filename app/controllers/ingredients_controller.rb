@@ -1,27 +1,25 @@
 class IngredientsController < ApplicationController
 
-	def index 
-		@ingredients = Ingredient.all
 
+	def index
+		@search = Ingredient.search(params[:q])
+		@ingredients = @search.result(:exact => true)
+		@search.build_condition if @search.conditions.empty?
+		@search.build_sort if @search.sorts.empty?
 	end
 
-	def create 
+	def new
 		@ingredient = Ingredient.new
-		if @ingredient.save
-			@recipe
-		else
-			flash[:notice] = 'Recipe not saved!'
+	end
 
-		end
-	end 
+	def add_to_recipe_ingredients
+		@ingredient = Ingredient.find(params[:id])
+		@recipe_ingredient = RecipeIngredient.ingredient.build(params[:ingredient])
 
-	def new 
-		@ingredient = Ingredient.new
 	end
 
 	def show
 		@ingredient = Ingredient.find(params[:id])
 	end
-
 
 end
