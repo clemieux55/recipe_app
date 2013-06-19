@@ -5,6 +5,7 @@ class RecipesController < ApplicationController
 		unless user_signed_in?
 			flash[:notice] = 'You must register to create recipe!'
 		end
+    @recipe_ingredient = RecipeIngredient.new
 	end
 
   def index
@@ -13,8 +14,8 @@ class RecipesController < ApplicationController
 
   def create
   	@recipe = Recipe.new(params[:recipe])
+    redirect_to ingredients_path
   	if @recipe.save 
-  		redirect_to ingredients_path
   		flash[:notice] = 'Now choose the ingredients'
   	else
   		flash[:notice] = 'Please fill in appropriate fields'

@@ -3,6 +3,8 @@ require 'spec_helper'
 describe "Recipe" do 
 	describe "GET /recipes" do 
 
+		let(:valid_user) { FactoryGirl.build(:user) }
+
 		it 'will not let guest create recipe' do
 			visit root_path
 			click_on 'Add Recipe'
@@ -11,10 +13,7 @@ describe "Recipe" do
 
 		it 'only allows registered users access to add recipes' do 
 			visit root_path
-			user = FactoryGirl.build(:user)
-			fill_in 'Email', :with => user.email
-			fill_in 'Password', :with => user.password
-			click_on 'Log In'
+			sign_in_as valid_user
 			click_link 'Add Recipe'
 			page.should have_content('Add Delishishness')
 		end

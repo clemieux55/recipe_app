@@ -1,14 +1,11 @@
-div.container-recipe {
-	margin-top: -50px;
-	margin-right: 150px;
-	padding:30px 30px 30px 30px;
-	display:inline-block;
-}
 
-
-div.container-ingredient {
-	margin-top: 50px;
+div.recipe-fields {
+	width: 25%;
+	box-shadow: 1px grey;
+	text-align: center;
 	display:inline-block;
+	border: solid black 2px;
+	margin-left:40%;
 
 
 }
