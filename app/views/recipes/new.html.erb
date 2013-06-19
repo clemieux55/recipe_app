@@ -1,10 +1,9 @@
 <h1>Add Delishishness</h1>
 	<div class="recipe-fields">
-		<%= form_for @recipe do |f| %>
-			<%= f.label "Title" %>
-			<%= f.text_field :title %>
-			<%= f.label "Description" %>
-			<%= f.text_area :description %><br>
+		<%= simple_form_for @recipe do |f| %>
+			<%= f.input :title %>
+			<%= f.input :description %><br>
+			<%= f.association :ingredients %>
 			<%= f.submit %>
 		<% end %>
 	</div>

@@ -28,6 +28,9 @@ describe "POST /recipe" do
 			fill_in 'Email', :with => user.email
 			fill_in 'Password', :with => user.password
 			click_on 'Log In'
+			Ingredient.create(:name => 'Sauce')
+			Ingredient.create(:name => 'Noodle')
+			Ingredient.create(:name => 'Riccotta')
 		end
 
 		it 'will not allow the user to create recipe without a title' do 
@@ -42,8 +45,20 @@ describe "POST /recipe" do
 			click_on 'Add Recipe'
 			fill_in 'recipe_title', :with => 'Lasagna'
 			fill_in 'recipe_description', :with => 'Garfields FAvorite'
+			select 'Sauce', :from => 'Ingredients'
+			select 'Noodle', :from => 'Ingredients'
+			select 'Riccotta', :from => 'Ingredients'
 			click_on 'Create Recipe'
-			page.should have_content('Now choose the ingredients')
+
+		end
+
+		it 'will let the user select ingredients' do 
+			click_on 'Add Recipe'
+			fill_in 'recipe_title', :with => 'Erics Masterpiece'
+			fill_in 'recipe_description', :with => 'Lots of sauce'
+			select 'Sauce', :from => 'Ingredients'
+			click_on 'Create Recipe'
+			page.should have_content('Recipe Successfully Created')
 		end
 	end
 end

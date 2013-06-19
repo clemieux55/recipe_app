@@ -14,12 +14,18 @@ class RecipesController < ApplicationController
 
   def create
   	@recipe = Recipe.new(params[:recipe])
-    redirect_to ingredients_path
   	if @recipe.save 
-  		flash[:notice] = 'Now choose the ingredients'
+  		flash[:notice] = 'Recipe Successfully Created'
+      redirect_to recipe_path(@recipe)
   	else
   		flash[:notice] = 'Please fill in appropriate fields'
+      render action: "new"
   	end
   end
   
+  def show
+    @recipe = Recipe.find(params[:id])
+
+  end
+
 end
