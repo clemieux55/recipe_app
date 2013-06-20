@@ -4,3 +4,15 @@ FactoryGirl.define do
 		description 'It is wonderfully saucy'
 	end
 end
+
+
+FactoryGirl.define do 
+	sequence :title do |n|
+		"recipe#{n}"
+	end
+
+	factory :many do 
+		title
+		description 'Best recipe ever'
+	end
+end

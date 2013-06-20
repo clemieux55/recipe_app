@@ -3,16 +3,21 @@ require 'spec_helper'
 describe Recipe do
   describe "only add to database if criteria is accepted" do
 
-  	it 'adds a new recipe when criteria is valid' do 
-	  	prev_count = Recipe.count
-	  	FactoryGirl.create(:recipe)
-	  	expect(Recipe.count).to eql(prev_count + 1)
-  	end
 
-  	it 'will not add a recipe if title is invalid' do 
-  		prev_count = Recipe.count
-  		recipe = FactoryGirl.build(:recipe, :title => '')
-  		expect(Recipe.count).to eql(prev_count )
-  	end
+    it { should have_valid(:title).when('Mothers Lasagna', 'Applesauce') }
+    it { should_not have_valid(:title).when('', nil) }
+
+    it { should have_valid(:description).when('This is one delishish meal!') }
+    it { should_not have_valid(:description).when('', nil) }
+
+    it { should have_valid(:author).when('Joe Montanta', 'Chris Lemieux') }
+    it { should have_valid(:author).when('', nil) }
+
+
+    it { should have_many(:recipe_ingredients) }
+    it { should have_many(:ingredients) } 
   end
+
+
+
 end

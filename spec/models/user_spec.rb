@@ -1,17 +1,13 @@
 require 'spec_helper'
 
 describe User do 
+	let(:user) { FactoryGirl.build(:user) }
 	
-	context 'sign in' do 
+	it { should have_valid(:email).when('example@email.com') } 
+	it { should_not have_valid(:email).when('bademail.com', nil, '') }
 
-		it 'Let user sign in with valid attributes' do
-			user = FactoryGirl.build(:user, :email => 'chris666@gmail.com')
-			expect(user.save).to be_true
-		end
+	it { should validate_presence_of(:password) }
+	it { should validate_presence_of(:email) }
 
-		it 'User can not sign in if password is invalid' do 
-			user = FactoryGirl.build(:user, :password => 'not_correct')
-			expect(user.save).to be_false
-		end
-	end
+	it { should validate_presence_of(:password_confirmation) }
 end

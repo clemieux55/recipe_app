@@ -58,7 +58,7 @@ describe "POST /recipe" do
 			fill_in 'recipe_description', :with => 'Lots of sauce'
 			select 'Sauce', :from => 'Ingredients'
 			click_on 'Create Recipe'
-			page.should have_content('Recipe Successfully Created')
+			page.should have_content('Recipe Successfully Created Erics Masterpiece')
 		end
 	end
 end

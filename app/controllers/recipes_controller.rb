@@ -9,7 +9,8 @@ class RecipesController < ApplicationController
 	end
 
   def index
-  	@recipes = Recipe.all
+    @recipes = search.result
+
   end
 
   def create
@@ -25,7 +26,6 @@ class RecipesController < ApplicationController
   
   def show
     @recipe = Recipe.find(params[:id])
-
   end
 
 end
