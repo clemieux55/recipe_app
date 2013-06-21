@@ -69,17 +69,9 @@ end
       click_on 'search-button'
       expect(current_path).to eql(recipes_path)
     end
-
-    it 'will not allow a search if nothing is inputted by the user' do 
-      visit root_path
-      fill_in 'search-field', :with => ''
-      click_on 'search-button'
-      page.should have_content('You need to enter something to be able to search!')
-    end
   end
 
   describe 'homepage content' do 
-    let(:recipies) { FactoryGirl.create(:many) }
 
     it 'should have a recent recipe field' do 
       visit root_path
@@ -87,9 +79,9 @@ end
     end
 
     it 'should have the last recipe created as content' do
-      recipies
+      recipe = FactoryGirl.create(:recipe)
       visit root_path
-      page.should have_content('recipies.title')
+      page.should have_content(recipe.title)
     end
   end
 end
