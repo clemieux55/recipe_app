@@ -1,2 +1,15 @@
-<h1>Recipes#new</h1>
-<p>Find me in app/views/recipes/new.html.erb</p>
+<h1>Add Delishishness</h1>
+	<div class="recipe-fields">
+		<%= simple_form_for @recipe do |f| %>
+			<%= f.input :title %>
+			<%= f.input :description %><br>
+			<%= f.association :ingredients %>
+			<%= f.submit %>
+		<% end %>
+	</div>
+
+
+
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
