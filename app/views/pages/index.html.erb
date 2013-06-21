@@ -1,13 +1,19 @@
-<h1 class="row"><p>Welcome</p></h1>
-	<div class="row">
-		<div class="span2">
-			<div class="offset1">
-				<div class="offset2">
-				</div>
-			</div>
-		</div>
+<div class="container">
+	<div class="row inner-banner-row">
+		<h1 class="headling">Welcome
+			<p>Top Notch Recipes Secretly Taken From Grandmas Recipe Book</p>
+		</h1>
+		<img href="assets/images/chicken-parmigiana-13.jpg"></img>
 	</div>
-		<div class="row">
-			<div class="bottom-row">
-			</div>
+</div>
+
+<h4 class="newest-recipies">Recently Added</h4>
+	<div class="h4-border-div"></div>
+		<div class="newest-recipies row-fluid">
+			<% @recipes.each do |recipe| %>
+				<div class="recipe-title span4">
+					<%= recipe.title %> :<br>
+					<%= recipe.description %><br>
+				</div>
+			<% end %>
 		</div>

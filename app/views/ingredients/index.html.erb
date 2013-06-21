@@ -1,0 +1,26 @@
+<div class="search-container">
+	<div class="search-fields">
+	<%= search_form_for @search do |f| %>
+		<%= f.label :ingredient %>
+		<%= f.text_field :name_cont %>
+		<%= f.sort_fields do |s| %>
+			<%= s.sort_select %>
+		<% end %>
+	</div>
+			
+	<div class="search-button">
+		<%= f.submit "Search Ingredients" %>
+	<% end %>
+	</div>
+
+	<div class="available-ingredients">
+		<%= sort_link @search, :name, "Ingredient name" %>
+		<% 20.times do %>
+			<% @ingredients.each do |ingredient| %>
+		<div class="seperator"> 
+				<%= link_to(ingredient.name, new_ingredient_path) %><br>
+			<% end %>
+		<% end %>
+		</div>
+	</div>
+</div>

@@ -12,29 +12,78 @@ describe "pages/index" do
       visit root_path
       page.should have_link('Sign up')
     end
-  end
-
-  describe 'has link to get recipe index' , :type => :feature do
-    
-    it 'has the selector ul.navbar-inner' do
-      visit root_path
-      page.should have_content('Search')
-    end
-  end
+end
 
   describe 'user log in' do 
-    before :each do 
-      FactoryGirl.create(:user)
-    end
+    let(:valid_user) { FactoryGirl.build(:user) }
       
     it 'allows the user to sign in' do
       visit root_path
-  		fill_in 'Email', :with => 'clemieux598@gmail.com'
-  		fill_in 'Password', :with => 'chris666'
-  		click_on 'Log In'
+      sign_in_as valid_user
       page.should have_content 'Signed in successfully.'
     end
+
+    it 'will not allow a user to sign in with an invalid email' do 
+      visit root_path
+      fill_in 'Email', :with => 'bob@gmail.com'
+      fill_in 'Password', :with => 'bobopedic'
+      click_on 'Log In'
+      page.should have_content 'Invalid email or password'
+    end
 	end
+
+  describe 'It has a search form for users to search by recipe title' , :type => :feature do
+
+   
+    it 'has a home button' do 
+      visit root_path
+      page.should have_link('Home')
+    end
+
+    it 'should have a browse recipe button' do 
+      visit root_path
+      page.should have_link('Browse')
+    end
+
+    it 'should have a categories link' do 
+      visit root_path
+      page.should have_link('categories')
+    end
+  end
+
+  describe 'It allows the user to search' do
+    before :each do
+      Recipe.create(:title => 'Mothers Lasagna', :description => 'The best sauce ever')
+    end 
+
+    it 'allows the user to input what they would like to search for' do 
+      visit root_path
+      fill_in 'search-field', :with => 'lasagna'
+      click_on 'search-button'
+      page.should have_content('Mothers Lasagna')
+    end
+
+    it 'checks to see if search brings you to the correct path' do
+      visit root_path
+      fill_in 'search-field', :with => 'lasagna'
+      click_on 'search-button'
+      expect(current_path).to eql(recipes_path)
+    end
+  end
+
+  describe 'homepage content' do 
+
+    it 'should have a recent recipe field' do 
+      visit root_path
+      page.should have_content('Recently Added')
+    end
+
+    it 'should have the last recipe created as content' do
+      recipe = FactoryGirl.create(:recipe)
+      visit root_path
+      page.should have_content(recipe.title)
+    end
+  end
 end
 
 

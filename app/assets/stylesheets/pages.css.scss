@@ -1,6 +1,6 @@
 header {
 	height: 100px;
-	width:1956px;
+	width:100%;
 
 }
 
@@ -12,9 +12,40 @@ padding: 20px;
 
 h1.row {
 	text-align: center;
-	width: 1956px;
+	width: 100%;
 
 }
+
+h1.headling {
+	font-family:"Courier New", Courier, monospace;
+	text-align:center;
+
+	p {
+		font-size: 14pt;
+	}
+}
+
+div.h4-border-div {
+	height:5px;
+	background-color:black;	
+}
+
+h4.newest-recipies {
+	padding:5px;
+	font-size: 20pt;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+
+
+}
+
+div.row-fluid {
+	margin-top:30px;
+	width: 100%;
+	margin-left: 235px;
+
+}
+
 
 .navbar ul li {
 	list-style: none;
@@ -22,37 +53,31 @@ h1.row {
 	form .navbar-search {
 		margin:10px 10px 10px 10px;
 		padding: 8px 20px 8px 8px
-
-
 	}
 }
 	
-
-button.btn.btn-success {
-	
-	margin: 0px 0px 12px 5px;
-}
-
-
 h1 {
-	background-color: pink;
+	border: black solid 2px;
+	background-color: #F4D6BC;
 	height:100px;
-	width: 1454px;
+	width: 100%;
 	padding: 30px;
 
 }
 
-div.row {
-	background-color: antiquewhite;
+div.inner-banner-row {
+	border-width: 3px;
+	border-style: solid dashed solid dashed;
+	background-color: #447294;
 	height:450px;
-	width: 1956px;
+	width: 100%;
 	padding: 30px;
 
 
 	div.bottom-row {
 		background-color: lightblue;
 		height:200px;
-		width:1956px;
+		width:100%;
 
 	}
 
