@@ -5,10 +5,17 @@ header {
 }
 
 div.user-nav {
-padding: 20px;
+	padding: 20px;
+}
 
+div.chicken-image img {
+	border:2px solid black;
+	margin-left: 50px;
+	border-radius: 25px;
+	max-width: 40%;
 
 }
+
 
 h1.row {
 	text-align: center;

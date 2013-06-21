@@ -16,6 +16,8 @@ describe Recipe do
 
     it { should have_many(:recipe_ingredients) }
     it { should have_many(:ingredients) } 
+
+    it { should have_many(:comments) }
   end
 
 
