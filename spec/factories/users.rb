@@ -19,9 +19,3 @@ FactoryGirl.define do
 	end
 end
 
-FactoryGirl.define do 
-	factory :sign_in do 
-  	email 'clemieux598@gmail.com'
-  	password 'chris666'
-  end
-end

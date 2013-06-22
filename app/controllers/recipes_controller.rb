@@ -1,16 +1,16 @@
 class RecipesController < ApplicationController
-  
+  before_filter :authenticate_user!
+
 	def new
 		@recipe = Recipe.new
 		unless user_signed_in?
-			flash[:notice] = 'You must register to create recipe!'
+			flash[:notice] = 'You need to sign in or sign up before continuing.'
 		end
     @recipe_ingredient = RecipeIngredient.new
 	end
 
   def index
     @recipes = search.result
-
   end
 
   def create

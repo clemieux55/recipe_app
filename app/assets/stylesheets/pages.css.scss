@@ -1,11 +1,21 @@
 header {
 	height: 100px;
 	width:100%;
-
 }
 
 div.user-nav {
 	padding: 20px;
+}
+
+h1.delish {
+	height:100px;
+	text-align:center;
+
+}
+
+div.welcome-sign-in {
+	padding-bottom:10px;
+	text-style:bold;
 }
 
 div.chicken-image img {
@@ -20,7 +30,6 @@ div.chicken-image img {
 h1.row {
 	text-align: center;
 	width: 100%;
-
 }
 
 h1.headling {
@@ -42,17 +51,13 @@ h4.newest-recipies {
 	font-size: 20pt;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-align: center;
-
-
 }
 
 div.row-fluid {
 	margin-top:30px;
 	width: 100%;
 	margin-left: 235px;
-
 }
-
 
 .navbar ul li {
 	list-style: none;
@@ -79,7 +84,6 @@ div.inner-banner-row {
 	height:450px;
 	width: 100%;
 	padding: 30px;
-
 
 	div.bottom-row {
 		background-color: lightblue;
