@@ -12,7 +12,7 @@ describe 'Comments' do
 			fill_in 'search-field', :with => 'lasagna'
 			click_on 'search-button'
 			click_on 'Lasagna'
-			page.should have_content('Comment')
+			expect(page).to have_content('Comment')
 		end
 
 		it 'has a text area so that users can type their comments' do
