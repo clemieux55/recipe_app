@@ -1,17 +1,19 @@
- 
-  <% if user_signed_in? %>Welcome! <%= current_user.email %>. Not you?
-      <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-      <% end %>
-    <% unless user_signed_in? %>
-    	<%= form_for "user", :url => user_session_path do |f| %>
-    		<%= f.label :email, 'Email' %>
-    		<%= f.text_field :email %>
-    		<%= f.label :password, 'Password' %>
-    		<%= f.password_field :password %>
-        <%= f.label :remember_me, 'Remember me' %>
-        <%= f.check_box :remember_me %>
-        <%= f.submit 'Log In' %>
-      <% end %>
-      <%=  %>
-      <%= link_to "Sign up", new_user_registration_path %>
-  <% end %>
+<% if user_signed_in? %>
+<div class="welcome-sign-in">
+ <p class="show-user-email">Hello!<br> <%= current_user.email %><br></p>
+  </div>
+  <%= button_to "Sign out", destroy_user_session_path, :method => :delete, :class => "btn btn-danger" %>
+<% end %>
+  <% unless user_signed_in? %>
+  	<%= form_for "user", :url => user_session_path do |f| %>
+  		<%= f.label :email, 'Email' %>
+  		<%= f.text_field :email %>
+  		<%= f.label :password, 'Password' %>
+  		<%= f.password_field :password %>
+      <%= f.label :remember_me, 'Remember me' %>
+      <%= f.check_box :remember_me %>
+      <%= f.submit 'Log In', :class => "btn btn-warning" %>
+    <% end %>
+    <%=  %>
+    <%= link_to "Sign up", new_user_registration_path %>
+<% end %>

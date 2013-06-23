@@ -9,7 +9,6 @@ FactoryGirl.define do
 end
 
 
-
 FactoryGirl.define do 
 	sequence(:random_password) {|n| n = rand(100), "#{LoremIpsum.generate}#{n}" }
 	factory :many_users do
