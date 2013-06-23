@@ -8,7 +8,10 @@ gem 'rails', '3.2.13'
 gem 'pg'
 gem 'devise'
 gem 'launchy'
-
+gem 'simple_form'
+gem 'ransack'
+gem 'kaminari'
+gem "chosen-rails", "~> 0.9.15"
 
 # Gems used only for assets and not required
 # in production environments by default.
