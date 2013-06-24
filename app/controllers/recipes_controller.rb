@@ -27,6 +27,7 @@ class RecipesController < ApplicationController
   def show
     @recipe_ingredients = RecipeIngredient.new
     @recipe = Recipe.find(params[:id])
+    @comment = Comment.new
   end
 
 end

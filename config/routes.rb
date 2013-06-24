@@ -7,6 +7,8 @@ resources :recipes do
   resources :ingredients 
 end
 
+resources :comments
+
 resources :ingredients
 
 resources :ingredients do 

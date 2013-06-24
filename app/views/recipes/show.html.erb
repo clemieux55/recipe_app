@@ -1,2 +1,18 @@
 <%= @recipe.title %><br>
 <%= @recipe.description %>
+
+
+
+<div class="comment-container">
+	<div class="add-comment">
+		<p>Add Comment</p>
+		<div class="comment-box">
+		<%= simple_form_for @comment do |c|  %>
+			<%= c.text_area :body, :wrapper => :small  %>
+			<%= c.submit :class => "btn btn-success"%>
+		<% end %>
+		</div>
+	</div>
+</div>
+
+

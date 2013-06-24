@@ -16,6 +16,12 @@ describe 'Comments' do
 		end
 
 		it 'has a text area so that users can type their comments' do
+			sign_in_as valid_user
+			visit root_path
+			fill_in 'search-field', :with => 'Lasagna'
+			click_on 'search-button'
+			click_on 'Lasagna'
+			expect(page).to have_content('Add Comment')
 		end
 
 		it 'has a way to edit comments if the user chooses' do 
@@ -25,6 +31,12 @@ describe 'Comments' do
 		end
 
 		it 'loads the comments when the recipe selected is loaded' do
+			sign_in_as valid_user
+			visit root_path
+			fill_in 'search-field', :with => 'Lasagna'
+			click_on 'search-button'
+			click_on 'Lasagna'
+			expect(page).to have_content('You lasagna is awesome')
 		end
 
 	end

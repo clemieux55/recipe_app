@@ -41,11 +41,12 @@ describe "Adding a recipe" do
 		it 'will let the user add a recipe if registered' do 
 			click_on 'Add Recipe'
 			fill_in 'recipe_title', :with => 'Lasagna'
-			fill_in 'recipe_description', :with => 'Garfields FAvorite'
+			fill_in 'recipe_description', :with => 'Garfields Favorite'
 			select 'Sauce', :from => 'Ingredients'
 			select 'Noodle', :from => 'Ingredients'
 			select 'Riccotta', :from => 'Ingredients'
 			click_on 'Create Recipe'
+			expect(page).to have_content("Garfields Favorite")
 
 		end
 
