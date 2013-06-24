@@ -2,6 +2,9 @@
 <%= @recipe.description %>
 
 
+<% @recipe.ingredients.each do |ingredient| %>
+	<%= ingredient.name %>
+<% end %>
 
 <div class="comment-container">
 	<div class="add-comment">
@@ -14,5 +17,6 @@
 		</div>
 	</div>
 </div>
+
 
 

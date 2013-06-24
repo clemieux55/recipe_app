@@ -2,7 +2,6 @@
 
 FactoryGirl.define do
   factory :ingredient do
-    name "MyString"
-    
+    sequence(:name) { |n| "Ingred#{n}ient" }
   end
 end

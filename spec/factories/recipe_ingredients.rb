@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :recipe_ingredient, :class => 'RecipeIngredients' do
-    recipe_id 1
-    ingredient_id 1
+    association :recipe
+    association :ingredient
   end
 end
