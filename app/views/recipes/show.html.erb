@@ -6,6 +6,10 @@
 	<%= ingredient.name %>
 <% end %>
 
+<%= @recipe.comments.each do |comment| %>
+	<%= comment.title %>
+<% end %>
+
 <div class="comment-container">
 	<div class="add-comment">
 		<p>Add Comment</p>

@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :comment do
-    body "MyString"
-    user_id 1
+    body "This recipe made my mouth water and toes tingle"
+    association :user
   end
 end
