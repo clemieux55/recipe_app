@@ -6,13 +6,17 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-	<div class="navbar navbar-inverse">
-<%= render 'navbar_form' %>
-	</div>
 <body>
+	<div class="container-fluid">
+		<div class="navbar navbar-inverse">
+			<%= render 'navbar_form' %>
+		</div>
+
+
+
 <div class="user-nav">
-	
-  <%= render 'sign_in_form' %>
+
+	<%= render 'sign_in_form' %>
 
 </div>
 
@@ -22,6 +26,6 @@
 
 <%= yield %>
 
-
+	</div>
 </body>
 </html>

@@ -3,14 +3,13 @@ header {
 	width:100%;
 }
 
-div.user-nav {
-	padding: 20px;
+div.welcome-sign-in {
+	padding-top:30px;
+
 }
 
-h1.delish {
-	height:100px;
-	text-align:center;
-
+div.user-nav {
+	padding: 20px;
 }
 
 div.welcome-sign-in {
@@ -32,7 +31,7 @@ h1.row {
 	width: 100%;
 }
 
-h1.headling {
+h1.heading {
 	font-family:"Courier New", Courier, monospace;
 	text-align:center;
 
@@ -64,14 +63,18 @@ div.row-fluid {
 
 	form .navbar-search {
 		margin:10px 10px 10px 10px;
-		padding: 8px 20px 8px 8px
+		padding: 8px 20px 8px 8px;
 	}
 }
-	
+
+h1.heading {
+
+
+}
+
 h1 {
-	border: black solid 2px;
-	background-color: #F4D6BC;
-	height:100px;
+	text-align:center;
+	height:55px;
 	width: 100%;
 	padding: 30px;
 
