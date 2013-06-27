@@ -18,10 +18,8 @@ describe 'homepage content' do
     expect(page).to have_content('Donut')
   end
 
-
-
   def last_recipe_created
-    Ingredient.create!(name: 'dough')
+    Ingredient.create(name: 'dough')
     visit root_path
     click_on 'Add Recipe'
     fill_in "recipe_title", with: 'Donut'

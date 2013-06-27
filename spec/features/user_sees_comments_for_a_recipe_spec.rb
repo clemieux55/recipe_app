@@ -12,23 +12,17 @@ feature "user sees comments for the recipe", %q{
 
   let(:user) { FactoryGirl.create(:user) }  
   
-  let(:recipe) do 
-    FactoryGirl.create(:recipe) do |recipe|
-      3.times { recipe.comments.create(attributes_for(:comment)) }
-    end
-  end
-
-  let(:comment1) { recipe.comments[0] }
-  let(:comment2) { recipe.comments[1] }
-  let(:comment3) { recipe.comments[2] }
+  let(:recipe) { FactoryGirl.create(:recipe_with_both) }
+  
 
   scenario "usersees all of the comments" do
     sign_in_as user
 
     visit recipe_path(recipe)
 
-    expect(page).to have_content comment1.body
-    expect(page).to have_content comment2.body
-    expect(page).to have_content comment3.body
+    recipe.comments.each do |comment|
+      expect(page).to have_content comment.body
+    end
+
   end
 end

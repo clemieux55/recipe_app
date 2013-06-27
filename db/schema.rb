@@ -37,10 +37,9 @@ ActiveRecord::Schema.define(:version => 20130621185412) do
   create_table "recipes", :force => true do |t|
     t.string   "title"
     t.string   "author"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
     t.text     "description"
-    t.integer  "ingredient_id"
   end
 
   create_table "users", :force => true do |t|

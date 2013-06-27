@@ -9,10 +9,7 @@ describe "User adds a recipe" do
 
 		sign_in_as valid_user
 
-		Ingredient.create!(:name => 'Sauce')
-		Ingredient.create!(:name => 'Noodle')
-		Ingredient.create!(:name => 'Riccotta')
-
+		Ingredient.create!(:name => ['Sauce', 'Noodle', 'Riccotta'])
 		click_on 'Add Recipe'
 	end
 
@@ -49,14 +46,7 @@ describe "User adds a recipe" do
 		select 'Riccotta', :from => 'Ingredients'
 		click_on 'Create Recipe'
 		expect(page).to have_content('Garfields Favorite', 'Lasagna')
-	end
-
-	it 'will not create a recipe if ingredients is empty' do
-		prev_count = Recipe.count
-		fill_in 'recipe_title', :with => 'Lasagna'
-		fill_in 'recipe_description', :with => 'Garfields Favorite'
-		click_on 'Create Recipe'
-		expect(Recipe.count).to eql(prev_count)
+		expect(page).to have_content('Noodle', 'Sauce', 'Riccotta')
 	end
 end
 

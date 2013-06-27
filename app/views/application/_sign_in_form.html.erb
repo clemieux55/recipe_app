@@ -12,8 +12,9 @@
     <%= f.check_box :remember_me %>
     <%= f.submit 'Log In', id: 'Log In', :class => "btn btn-warning", :method => :post %>
   <% end %>
+  <%= link_to "Sign up", new_user_registration_path %>
 <% end %>
-<%= link_to "Sign up", new_user_registration_path %>
+
 
 
 
