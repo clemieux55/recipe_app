@@ -1,2 +1,33 @@
-<%= @recipe.title %><br>
-<%= @recipe.description %>
+
+<div id="recipe-container">
+	<div id="recipe-titile-container">
+		<%= @recipe.title %><br>
+	</div>
+
+	<div id="recipe-description-container">
+		<p>Description:</p>
+		<%= @recipe.description %>
+	</div>
+
+	<div id="recipe-ingredients-container">
+		<p>Ingredients :</p>
+		<% @recipe.ingredients.each do |ingredient| %>
+			<%= ingredient.name %><br>
+		<% end %>
+	</div>
+</div>
+
+<%= @recipe.comments.each do |comment| %>
+	<%= comment.body %>
+<% end %>
+
+<div class="comment-container">
+	<p>Add Comment</p>
+	<%= simple_form_for @comment do |c|  %>
+		<%= c.input :body, :label => false, :as => :text, :input_html => { :rows => 6 }  %>
+		<%= c.submit :class => "btn btn-success"%>
+	<% end %>
+</div>
+
+
+

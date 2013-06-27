@@ -1,11 +1,11 @@
 RecipeApp::Application.routes.draw do
   devise_for :users
 
-  get "pages/index"
-
 resources :recipes do 
   resources :ingredients 
 end
+
+resources :comments
 
 resources :ingredients
 
@@ -17,7 +17,9 @@ resources :ingredients do
 end
 
 
-  resources :pages, :only => [:show, :index]
+resources :pages, :only => [:show, :index]
+
+
 
 
   # The priority is based upon order of creation:

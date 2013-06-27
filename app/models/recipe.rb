@@ -1,8 +1,12 @@
 class Recipe < ActiveRecord::Base
-  attr_accessible :author, :title, :ingredient_ids, :description
-  validates_presence_of :title, :description, {:maximun => 500}
-  has_many :ingredients, :through => :recipe_ingredients
+  attr_accessible :author, :title, :description, :ingredients_attributes, :ingredient_ids
+  validates_presence_of :description, :length => {:maximun => 500}
+  validates_presence_of :title, null: false
+  has_many :ingredients, 
+  	:through => :recipe_ingredients
   has_many :recipe_ingredients
   has_many :comments
+  accepts_nested_attributes_for :comments
+  accepts_nested_attributes_for :ingredients
 
 end

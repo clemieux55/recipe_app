@@ -11,7 +11,9 @@ gem 'launchy'
 gem 'simple_form'
 gem 'ransack'
 gem 'kaminari'
-gem "chosen-rails", "~> 0.9.15"
+gem "chosen-rails"
+
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -32,6 +34,10 @@ group :test, :development do
   gem 'pry'
   gem 'shoulda-matchers'
   gem 'valid_attribute'
+end
+
+group :test do 
+  gem 'database_cleaner'
 end
 
   gem 'uglifier', '>= 1.0.3'
