@@ -7,14 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
-<%= render 'navbar_form' %>
+	<div class="container-fluid">
+		<div class="navbar navbar-inverse">
+			<%= render 'navbar_form' %>
+		</div>
 
-	</div>
-		<div class="container">
+
+
 <div class="user-nav">
-	
-  <%= render 'sign_in_form' %>
+
+	<%= render 'sign_in_form' %>
 
 </div>
 

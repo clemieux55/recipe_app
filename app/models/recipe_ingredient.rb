@@ -4,4 +4,6 @@ class RecipeIngredient < ActiveRecord::Base
   belongs_to :ingredient
   has_many :recipes
   has_many :ingredients
+  validates_presence_of :ingredient_id, scope: { uniqueness: true }
+  validates_presence_of :recipe_id,  scope: { uniqueness: true } 
 end

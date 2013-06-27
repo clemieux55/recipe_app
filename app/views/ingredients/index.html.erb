@@ -1,13 +1,13 @@
 <div class="search-container">
 	<div class="search-fields">
-	<%= search_form_for @search do |f| %>
-		<%= f.label :ingredient %>
-		<%= f.text_field :name_cont %>
-		<%= f.sort_fields do |s| %>
-			<%= s.sort_select %>
-		<% end %>
-	</div>
-			
+		<%= search_form_for @search do |f| %>
+			<%= f.label :ingredient %>
+			<%= f.text_field :name_cont %>
+			<%= f.sort_fields do |s| %>
+				<%= s.sort_select %>
+			<% end %>
+		</div>
+
 	<div class="search-button">
 		<%= f.submit "Search Ingredients" %>
 	<% end %>

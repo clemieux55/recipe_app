@@ -1,9 +1,9 @@
 <h1 class="delish">Add Deliciousness</h1>
 	<div class="recipe-fields">
 		<%= simple_form_for @recipe do |f| %>
-			<%= f.input :title %>
-			<%= f.input :description %><br>
-			<%= f.association :ingredients %>
+			<%= f.input :title, label: false, input_html: { placeholder: "Title"} %>
+			<%= f.input :description, label: false, input_html: { placeholder: "Description", :rows => 15 } %><br> 
+				<%= f.association :ingredients, :label => "Ingredients", input_html: { :class => "chzn-select multiple", "data-placeholder" => "Ingredients", :id => 'ingredient-input' } %>
 			<%= f.submit :class => "btn btn-warning" %>
 		<% end %>
 	</div>
@@ -13,3 +13,7 @@
 
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
+
+
+
+

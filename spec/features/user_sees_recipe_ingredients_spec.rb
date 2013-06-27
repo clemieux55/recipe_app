@@ -11,6 +11,8 @@ feature "user sees recipe ingredients", %q{
   # - I can save the ingredients used with a recipe
 
   let(:user) { FactoryGirl.create(:user) }
+
+
   
   let(:recipe) do
     FactoryGirl.create(:recipe) do |recipe|
@@ -21,6 +23,7 @@ feature "user sees recipe ingredients", %q{
   let(:ingredient1) { recipe.ingredients[0] }
   let(:ingredient2) { recipe.ingredients[1] }
   let(:ingredient3) { recipe.ingredients[2] }
+
 
   scenario "user sees all of the ingredients" do
     sign_in_as user

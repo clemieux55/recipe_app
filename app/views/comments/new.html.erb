@@ -1,6 +1,6 @@
 <h1 class="new-comment-header">Add Comment</h1>
 <div class="new-comment-form">	
 	<%= simple_form_for @comment do |c| %>
-		<%= c.input :body %>
+		<%= c.input :body, :input_html => { :rows => 8 } %>
 	<% end %>
 </div>

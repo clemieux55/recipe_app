@@ -7,25 +7,24 @@ feature "user sees comments for the recipe", %q{
 } do
 
   # Acceptance Criteria
-  # - I can view the ingredients with recipe instructions
-  # - I can save the ingredients used with a recipe
+  # - I can view the comments with recipe instructions
+  # - I can save the comments with a recipe
 
-  let(:valid_user) { FactoryGirl.build(:user) }
+  let(:user) { FactoryGirl.create(:user) }  
   
-  
-  let(:recipe) do
+  let(:recipe) do 
     FactoryGirl.create(:recipe) do |recipe|
-    3.times { recipe.comments.create(attributes_for(:comment)) }
+      3.times { recipe.comments.create(attributes_for(:comment)) }
     end
   end
 
-  let(:comment1) { FactoryGirl.create(:comment) }
-  let(:comment2) { FactoryGirl.create(:comment) }
-  let(:comment3) { FactoryGirl.create(:comment) }
+  let(:comment1) { recipe.comments[0] }
+  let(:comment2) { recipe.comments[1] }
+  let(:comment3) { recipe.comments[2] }
 
+  scenario "usersees all of the comments" do
+    sign_in_as user
 
-  scenario "user sees all of the comments" do
-    sign_in_as valid_user
     visit recipe_path(recipe)
 
     expect(page).to have_content comment1.body

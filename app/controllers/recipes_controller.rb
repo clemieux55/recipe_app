@@ -1,3 +1,5 @@
+require 'pry'
+
 class RecipesController < ApplicationController
   before_filter :authenticate_user!
 
@@ -15,7 +17,7 @@ class RecipesController < ApplicationController
 
   def create
   	@recipe = Recipe.new(params[:recipe])
-  	if @recipe.save 
+  	if @recipe.save == true
   		flash[:notice] = 'Recipe Successfully Created'
       redirect_to recipe_path(@recipe)
   	else

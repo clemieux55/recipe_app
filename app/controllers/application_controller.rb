@@ -5,7 +5,6 @@ class ApplicationController < ActionController::Base
 
 	def index
   	@search = Recipe.search(params[:q])
-
 	end
 
 	def search

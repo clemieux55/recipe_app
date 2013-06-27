@@ -11,7 +11,6 @@ class CommentsController < ApplicationController
 
 	def create
 		@comment = Comment.new(params[:recipe_id])
-		binding.pry
 		if @comment.save
 			flash[:notice] = 'Comment added'
 		else

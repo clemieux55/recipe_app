@@ -19,7 +19,4 @@ describe Recipe do
 
     it { should have_many(:comments) }
   end
-
-
-
 end

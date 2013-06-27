@@ -4,20 +4,25 @@ div.recipe-fields {
 	box-shadow: 1px grey;
 	text-align: center;
 	display:inline-block;
-	border: solid black 2px;
 	margin-left:40%;
-
 }
 
-div.add-comment {
-	border: solid black;
-	height:250px;
+div.comment-container {
+	text-align:center;
+	border: solid black 1px;
+	height:225px;
 	width:250px;
+}
 
+#recipe-description-container {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: black dotted 1px;
+	border-bottom: black dotted 1px;
 
-	.comment-box {
+	p {
+		font-weight: bold;
 
-
-
-		}
 	}
+
+}
