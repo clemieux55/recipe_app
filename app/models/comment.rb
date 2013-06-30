@@ -4,7 +4,6 @@ class Comment < ActiveRecord::Base
   validates_presence_of :recipe_id
   belongs_to :recipe
   belongs_to :user
-  has_one :recipe,
-  	through: :recipe_comments
+  
 
 end

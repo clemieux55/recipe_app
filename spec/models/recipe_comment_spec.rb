@@ -2,11 +2,11 @@ require 'spec_helper'
 
 describe RecipeComment do
 
-	it { should have_one(:recipe_id) }
-	it { should have_one(:comment_id) }
+	it { should have_many(:recipes) }
+	it { should have_many(:comments) }
 
-	it { should have_one(:recipe) }
-	it { should have_one(:user) }
+	it { should belong_to(:recipe) }
+	it { should belong_to(:user) }
 
 
 
