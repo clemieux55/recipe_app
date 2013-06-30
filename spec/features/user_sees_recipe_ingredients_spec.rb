@@ -11,18 +11,11 @@ feature "user sees recipe ingredients", %q{
   # - I can save the ingredients used with a recipe
 
   let(:user) { FactoryGirl.create(:user) }
-  
-  # let(:recipe) do 
-  #   binding.pry
-  #   FactoryGirl.create(:recipe) do |recipe|
-  #     3.times { recipe.ingredients.create(attributes_for(:ingredient)) }
-  #   end
-  # end
 
   let(:ingredient1) { FactoryGirl.create(:ingredient) }
   let(:ingredient2) { FactoryGirl.create(:ingredient) }
   let(:ingredient3) { FactoryGirl.create(:ingredient) }
-  let(:recipe) { FactoryGirl.create(:recipe, ingredients: [ingredient1, ingredient2, ingredient3])}
+  let(:recipe) { FactoryGirl.create(:recipe, ingredients: [ingredient1, ingredient2, ingredient3], user_id: user)}
   
   scenario "user sees all of the ingredients" do
     sign_in_as user

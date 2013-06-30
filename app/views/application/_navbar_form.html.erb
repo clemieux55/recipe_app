@@ -1,13 +1,10 @@
 <div class="navbar-inner">
-	<a class="brand" href="<%= root_path %>" class="home">Home</a>
+	<a class="brand" href="<%=u root_path %>" class="home">Home</a>
 	<ul class="nav">
 	<li class="active">
-		<a href="<%= new_recipe_path %>">Add Recipe</a></li>
+		<%= link_to 'Add Recipe', new_recipe_path %></li>
 	<li class="active">
-		<a href="#" id="browse">Browse</a></li>
-	<li class="active">
-		<a href="#" id="categories">Categories</a>
-	</li>
+		<%= link_to 'My Recipes', recipes_path(@user) %></li>
 	</ul>
 	<%= search_form_for search, :class => "nav navbar-search pull-right input-append search-querie"  do |f| %>
 		<%= f.text_field :title_cont, { :id => 'search-field'} %> 

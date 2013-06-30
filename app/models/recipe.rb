@@ -5,8 +5,11 @@ class Recipe < ActiveRecord::Base
   has_many :ingredients, 
   	:through => :recipe_ingredients
   has_many :recipe_ingredients
-  has_many :comments
-  accepts_nested_attributes_for :comments
+  has_many :recipe_comments
   accepts_nested_attributes_for :ingredients
+  has_many :comments,
+  	:through => :recipe_comments
+  	
+
 
 end

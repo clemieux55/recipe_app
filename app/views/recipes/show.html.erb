@@ -23,9 +23,9 @@
 
 <div class="comment-container">
 	<p>Add Comment</p>
-	<%= simple_form_for @comment do |c|  %>
+	<%= simple_form_for [@commentable, Comment.new] do |c|  %>
 		<%= c.input :body, :label => false, :as => :text, :input_html => { :rows => 6 }  %>
-		<%= c.submit :class => "btn btn-success"%>
+		<%= c.submit 'Add Comment', :class => "btn btn-success"%>
 	<% end %>
 </div>
 
