@@ -13,5 +13,5 @@ class User < ActiveRecord::Base
   validates_presence_of :email, :password, :password_confirmation
   has_many :comments,
     :through => :recipe_comments
-  belongs_to :recipe
+  has_many :recipes
 end

@@ -17,8 +17,10 @@ class RecipesController < ApplicationController
   end
 
   def create
+    current_user
     @comment = Comment.new(params[:comment])
   	@recipe = Recipe.new(params[:recipe])
+    @recipe.user = current_user
   	if @recipe.save == true
   		flash[:notice] = 'Recipe Successfully Created'
       redirect_to recipe_path(@recipe)

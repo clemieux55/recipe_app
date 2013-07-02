@@ -13,9 +13,9 @@ To see them
 	let(:user) { FactoryGirl.create(:user) }
 	let(:user2) { FactoryGirl.create(:user) }
 
-	let!(:recipe) { FactoryGirl.create(:recipe_with_both, user_id: user) }
-	let!(:recipe1) { FactoryGirl.create(:recipe_with_both, user_id: user) }
-	let!(:recipe2) { FactoryGirl.create(:recipe_with_both, user_id: user2) }
+	let!(:recipe) { FactoryGirl.create(:recipe_with_both, user: user) }
+	let!(:recipe1) { FactoryGirl.create(:recipe_with_both, user: user) }
+	let!(:recipe2) { FactoryGirl.create(:recipe_with_both, user: user2) }
 
 	scenario "User sees all of their recipies" do
 		sign_in_as user
