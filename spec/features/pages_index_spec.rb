@@ -24,11 +24,7 @@ end
   end
 
   it 'should have a browse recipe button' do 
-    expect(page).to have_link('Browse')
-  end
-
-  it 'should have a categories link' do 
-    expect(page).to have_link('categories')
+    expect(page).to have_link('Add Recipe')
   end
 end
 

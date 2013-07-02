@@ -9,7 +9,6 @@ div.recipe-fields {
 
 div.comment-container {
 	text-align:center;
-	border: solid black 1px;
 	height:225px;
 	width:250px;
 }
@@ -24,5 +23,44 @@ div.comment-container {
 		font-weight: bold;
 
 	}
+
+}
+
+#container {
+	padding:50px;
+
+}
+
+.comment-user {
+	border-bottom: black dotted 1px;
+}
+
+.comment-body {
+	border-bottom: black dotted 1px;
+	padding: 5px;
+}
+
+.comment {
+	padding-top: 8px;
+}
+
+.button-div {
+	padding-left: 6%;
+}
+
+body {
+	font-family: 'Source Sans Pro';
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Bitter';
+}
+
+body {
+	background-image: url('../retina_wood.png');
+}
+
+p.alert {
+	background-color: black;
 
 }

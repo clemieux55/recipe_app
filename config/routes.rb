@@ -5,7 +5,9 @@ resources :recipes do
   resources :ingredients 
 end
 
-resources :comments
+resources :recipes do 
+  resources :comments 
+end
 
 resources :ingredients
 
@@ -18,9 +20,6 @@ end
 
 
 resources :pages, :only => [:show, :index]
-
-
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

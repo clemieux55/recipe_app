@@ -8,12 +8,12 @@
 </div>
 
 <h4 class="newest-recipies">Recently Added</h4>
-	<div class="h4-border-div"></div>
-		<div class="newest-recipies row-fluid">
-			<% @recipes.each do |recipe| %>
-				<div class="recipe-title span4">
-					<%= recipe.title %> :<br>
-					<%= recipe.description %><br>
-				</div>
-			<% end %>
+<div class="h4-border-div"></div>
+	<div class="newest-recipies row-fluid">
+	<% @recipes.each do |recipe| %>
+		<div class="recipe-title span3">
+			<%= recipe.title %> :<br>
+			<%= recipe.description %><br>
 		</div>
+	<% end %>
+</div>
