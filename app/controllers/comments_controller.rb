@@ -10,14 +10,15 @@ class CommentsController < ApplicationController
 	end
 
 	def create
-		@commentable = Recipe.find(params[:id])
-		@comment = @commentable.comments.build(params[:comment])
-		if @comment.save
-			flash[:notice] = 'Comment added'
-			redirect_to(recipe)
+		@recipe = Recipe.find(params[:recipe_id])
+		@comment = @recipe.comments.build(params[:comment])
+		@comment.user = current_user
+		if @comment.save == true
+			flash[:notice] = 'Comment Added'
+			redirect_to(@recipe)
 		else
 			flash[:notice] = 'Comment not added'
-			render :action => "new"
+			redirect_to(@recipe)
 		end
 	end
 	

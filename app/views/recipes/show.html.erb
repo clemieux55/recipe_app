@@ -1,33 +1,44 @@
-
-<div id="recipe-container">
-	<div id="recipe-titile-container">
-		<%= @recipe.title %><br>
+<div id="container">
+	<div id="recipe-container">
+		<h2><%= @recipe.title %></h2><br>
 	</div>
 
-	<div id="recipe-description-container">
-		<p>Description:</p>
-		<%= @recipe.description %>
-	</div>
+		<div id="recipe-description-container">
+			<h4>Description:</h4>
+			<%= @recipe.description %>
+		</div>
 
-	<div id="recipe-ingredients-container">
-		<p>Ingredients :</p>
-		<% @recipe.ingredients.each do |ingredient| %>
-			<%= ingredient.name %><br>
+		<div id="recipe-ingredients-container">
+			<h4>Ingredients :</h4>
+			<% @recipe.ingredients.each do |ingredient| %>
+				<%= ingredient.name %><br>
+			<% end %>
+		</div>
+
+	<div class="comments">
+			<h4>Comments: </h4>
+		<% @recipe.comments.each do |comment| %>
+
+		<div class="comment-user">
+			<h5><%= comment.user.email %></h5>
+		</div>
+
+		<div class="comment-body">
+			<%= comment.body %><br>
+		</div>
+
 		<% end %>
+
+
+		<div class="comment">
+			<p>Add Comment</p>
+			<%= simple_form_for [@recipe, @comment] do |c|  %>
+				<%= c.input :body, :label => false, :as => :text, :input_html => { :rows => 3 }  %>
+			<div class="button-div">
+				<%= c.submit 'Add Comment', :class => "add-comment btn btn-info" %>
+			</div>
+			<% end %>
+		</div>
 	</div>
 </div>
-
-<%= @recipe.comments.each do |comment| %>
-	<%= comment.body %>
-<% end %>
-
-<div class="comment-container">
-	<p>Add Comment</p>
-	<%= simple_form_for [@commentable, Comment.new] do |c|  %>
-		<%= c.input :body, :label => false, :as => :text, :input_html => { :rows => 6 }  %>
-		<%= c.submit 'Add Comment', :class => "btn btn-success"%>
-	<% end %>
-</div>
-
-
 
