@@ -45,10 +45,10 @@ div.h4-border-div {
 	background-color:black;	
 }
 
-h4.newest-recipies {
+h3.newest-recipes {
+	font-weight: bold;
 	padding:5px;
 	font-size: 20pt;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-align: center;
 }
 
@@ -92,7 +92,10 @@ div.inner-banner-row {
 		background-color: lightblue;
 		height:200px;
 		width:100%;
-
 	}
-
 }
+
+div.recently-added {
+	margin: auto;
+}
+

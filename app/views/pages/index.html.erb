@@ -7,13 +7,26 @@
 	</div>
 </div>
 
-<h4 class="newest-recipies">Recently Added</h4>
+<h3 class="newest-recipes">Last Three Recipes Added</h3>
 <div class="h4-border-div"></div>
-	<div class="newest-recipies row-fluid">
+	<div class="recently-added">
 	<% @recipes.each do |recipe| %>
-		<div class="recipe-title span3">
-			<%= recipe.title %> :<br>
-			<%= recipe.description %><br>
+		<div class="span4 offset1">
+			<div class="recipe-title">
+				<h3>
+					<%= recipe.title %>
+				</h3><br>
+			</div>
+			<div class="recipe-description">
+			<h4>
+				<%= recipe.description %>
+			</h4><br>
+			<% recipe.ingredients.each do |ingredient| %>
+			<h5>
+				<%= ingredient.name %>
+			</h5>
+			<% end %>
+			</div>
 		</div>
 	<% end %>
 </div>
