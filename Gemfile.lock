@@ -40,6 +40,9 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    carrierwave (0.8.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
     chosen-rails (0.9.15)
       coffee-rails (>= 3.2)
       railties (>= 3.0)
@@ -179,6 +182,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass
   capybara
+  carrierwave
   chosen-rails
   coffee-rails (~> 3.2.1)
   database_cleaner

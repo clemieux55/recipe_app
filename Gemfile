@@ -13,6 +13,7 @@ gem 'simple_form'
 gem 'ransack'
 gem 'kaminari'
 gem "chosen-rails"
+gem 'carrierwave'
 
 
 

@@ -22,7 +22,7 @@ feature "user sees comments for the recipe", %q{
 
     recipe.comments.each do |comment|
       expect(page).to have_content comment.body
+      expect(page).to have_content user.email
     end
-
   end
 end

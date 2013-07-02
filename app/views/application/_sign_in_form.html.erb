@@ -3,19 +3,27 @@
 <%= current_user.email %><br>
 </p>
  <%= button_to "Sign out", destroy_user_session_path, :method => :delete, :class => "btn btn-danger" %>
+ <%= link_to 'Edit Information', edit_user_registration_path, :method => :get, id: 'edit-information' %>
 <% end %>
 
-<% unless user_signed_in? %>
-  <%= simple_form_for "user", :url => user_session_path do |f| %>
-    <%= f.input :email, placeholder: 'Email' %>
-    <%= f.input :password, placeholder: 'Password' %>
-    <%= f.check_box :remember_me %>
-    <%= f.submit 'Log In', id: 'Log In', :class => "btn btn-warning", :method => :post %>
-  <% end %>
-  <%= link_to "Sign up", new_user_registration_path %>
-<% end %>
-
-
+<div id="sign-in-form">
+	<% unless user_signed_in? %>
+	  <%= simple_form_for "user", :url => user_session_path, :id => "sign-in-form" do |f| %>
+	    <%= f.input :email, placeholder: 'Email' %>
+	    <%= f.input :password, placeholder: 'Password' %>
+	    <%= f.check_box :remember_me %>
+	    <%= f.submit 'Log In', id: 'Log In', :class => "btn btn-warning", :method => :post %>
+	  <% end %>
+	  <%= link_to "Sign up", new_user_registration_path %>
+	<% end %>
+</div>
+<script type="text/jscript">
+$(document).ready(function() {
+	var $dialog = $('<div></div>')
+	.html('This dialog will show everyt time!')
+	.diag
+}
+</script>
 
 
 

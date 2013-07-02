@@ -35,7 +35,7 @@ describe "User adds a recipe" do
 		fill_in 'recipe_description', :with => 'Lots of sauce'
 		select 'Sauce', :from => 'Ingredients'
 		click_on 'Create Recipe'
-		expect(page).to have_content('Recipe Successfully Created Erics Masterpiece')
+		expect(page).to have_content('Recipe Successfully Created')
 	end
 
 	it 'will let the user add three ingredients' do 
