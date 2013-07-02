@@ -15,7 +15,7 @@ feature "user sees recipe ingredients", %q{
   let(:ingredient1) { FactoryGirl.create(:ingredient) }
   let(:ingredient2) { FactoryGirl.create(:ingredient) }
   let(:ingredient3) { FactoryGirl.create(:ingredient) }
-  let(:recipe) { FactoryGirl.create(:recipe, ingredients: [ingredient1, ingredient2, ingredient3], user_id: user)}
+  let(:recipe) { FactoryGirl.create(:recipe, ingredients: [ingredient1, ingredient2, ingredient3])}
   
   scenario "user sees all of the ingredients" do
     sign_in_as user
