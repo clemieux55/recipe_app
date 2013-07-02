@@ -5,14 +5,7 @@ FactoryGirl.define do
 	factory :recipe do 
 		title
 		description
-		user_id
-
-		trait :user_id do 
-
-			after(:save) do |recipe|
-				FactoryGirl.create_list(:user, recipe: recipe)
-			end
-		end
+		association :user
 
 		trait :with_comments do
 			ignore do 

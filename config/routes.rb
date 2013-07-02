@@ -18,6 +18,9 @@ resources :ingredients do
   root to: 'ingredients#index'
 end
 
+resources :users, :only => [] do
+  resources :recipes, :only => [:index], :controller => :user_recipes
+end
 
 resources :pages, :only => [:show, :index]
 
