@@ -8,6 +8,7 @@ class Recipe < ActiveRecord::Base
   accepts_nested_attributes_for :ingredients
   has_many :comments
   # accepts_nested_attributes_for :comments  	
+  has_one :user
 
 
 end
