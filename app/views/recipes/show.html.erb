@@ -10,10 +10,19 @@
 
 		<div id="recipe-ingredients-container">
 			<h4>Ingredients :</h4>
-			<% @recipe.ingredients.each do |ingredient| %>
-				<%= ingredient.name %><br>
+
+
+			<% @recipe.recipe_ingredients.each do |ri| %>
+				<%= ri.measurement %>
+				<%= ri.ingredient.try(:name) %><br>
 			<% end %>
 		</div>
+					<%= simple_form_for [@recipe, @recipe_ingredient] do |f| %>
+			<%= f.input :value %>
+			<%= f.input :unit %>
+			<%= f.input :ingredient_id, as: :select, collection: Ingredient.all.collect{|i| [i.name, i.id]}, :label => "Ingredients", input_html: { :class => "chzn-select multiple", "data-placeholder" => "Ingredients", :id => 'ingredient-input' } %>
+			<%= f.submit %>
+		<% end %>
 
 	<div class="comments">
 			<h4>Comments: </h4>
@@ -28,6 +37,10 @@
 		</div>
 
 		<% end %>
+
+
+
+
 
 
 		<div class="comment">

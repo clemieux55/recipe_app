@@ -13,7 +13,8 @@ class CommentsController < ApplicationController
 		@recipe = Recipe.find(params[:recipe_id])
 		@comment = @recipe.comments.build(params[:comment])
 		@comment.user = current_user
-		if @comment.save == true
+		binding.pry
+		if @comment.save
 			flash[:notice] = 'Comment Added'
 			redirect_to(@recipe)
 		else

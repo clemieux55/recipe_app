@@ -211,6 +211,7 @@ DEPENDENCIES
   kaminari
   launchy
   lorem-ipsum
+  omniauth
   omniauth-twitter
   pg
   pry

@@ -17,7 +17,6 @@ class RecipesController < ApplicationController
   end
 
   def create
-    current_user
     @comment = Comment.new(params[:comment])
   	@recipe = Recipe.new(params[:recipe])
     @recipe.user = current_user
@@ -33,6 +32,7 @@ class RecipesController < ApplicationController
   def show
     @recipe = Recipe.find(params[:id])
     @comment = Comment.new
+    @recipe_ingredient = @recipe.recipe_ingredients.new
   end
 
 end
