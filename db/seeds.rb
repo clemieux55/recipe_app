@@ -14,3 +14,20 @@ ingredients = ["7-Up", "Adobo", "Agave Nectar", "Ale", "Alfalfa Sprouts", "Alfre
 ingredients.each do |ingred|
 	Ingredient.create!({ :name => ingred})
 end
+
+
+user = FactoryGirl.create(:user)
+
+recipes = ["Lasagna", "Pizza pie", "Chocolate pudding", "Moose Tracks", "Eric Surprise"]
+
+recipes.each do |recipe|
+	FactoryGirl.create(
+											:recipe_with_both,
+	 										title: recipe,
+	   									description: 'Get ingredients together, cook noodles and place
+											at the bottom of a pan. Layer Sauce and cheese over the noodles
+											repeat until desired thickness is reached',
+											ingredient_ids: [500,600,601,203],
+											user: user 
+											)
+end
