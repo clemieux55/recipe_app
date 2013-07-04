@@ -10,10 +10,11 @@ class CommentsController < ApplicationController
 	end
 
 	def create
+		
 		@recipe = Recipe.find(params[:recipe_id])
 		@comment = @recipe.comments.build(params[:comment])
 		@comment.user = current_user
-		binding.pry
+		
 		if @comment.save
 			flash[:notice] = 'Comment Added'
 			redirect_to(@recipe)

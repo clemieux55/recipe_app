@@ -10,3 +10,7 @@
 	ingredients = IngredientSeeder.new
 
 	ingredients.seed_database_with_ingredients
+
+	recipes = RecipeSeeder.new
+
+	recipes.seed_database_with_recipes

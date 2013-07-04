@@ -9,5 +9,6 @@ describe Ingredient do
 		it { should have_valid(:name).when('Chris', 'Stephen') }
 		it { should_not have_valid(:name).when(nil, '') }
 
-
+		it { should have_many(:recipes).through(:recipe_ingredients) }
+		
 end

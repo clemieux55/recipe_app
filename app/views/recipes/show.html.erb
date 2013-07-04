@@ -17,12 +17,6 @@
 				<%= ri.ingredient.try(:name) %><br>
 			<% end %>
 		</div>
-					<%= simple_form_for [@recipe, @recipe_ingredient] do |f| %>
-			<%= f.input :value %>
-			<%= f.input :unit %>
-			<%= f.input :ingredient_id, as: :select, collection: Ingredient.all.collect{|i| [i.name, i.id]}, :label => "Ingredients", input_html: { :class => "chzn-select multiple", "data-placeholder" => "Ingredients", :id => 'ingredient-input' } %>
-			<%= f.submit %>
-		<% end %>
 
 	<div class="comments">
 			<h4>Comments: </h4>

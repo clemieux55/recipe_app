@@ -28,12 +28,6 @@ describe 'homepage content' do
     expect(page).to have_content(recipe2.title)
     expect(page).to have_content(recipe3.title)
   end
-
-  it 'has the ingredients displayed for the recipe' do 
-    recipe1.ingredients.each do |ingredient|
-      expect(page).to have_content(ingredient.name)
-    end
-  end
 end
 
 
