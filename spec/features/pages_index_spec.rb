@@ -13,18 +13,3 @@ describe 'viewing the homepage' do
   end
 end
 
- describe 'it has a navidation bar' do
-  
-  before :each do 
-    visit root_path
-  end
-
-  it 'has a home button' do 
-    expect(page).to have_link('Home')
-  end
-
-  it 'should have a browse recipe button' do 
-    expect(page).to have_link('Add Recipe')
-  end
-end
-
