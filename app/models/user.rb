@@ -14,4 +14,6 @@ class User < ActiveRecord::Base
   has_many :comments,
     :through => :recipe_comments
   has_many :recipes
+
+
 end

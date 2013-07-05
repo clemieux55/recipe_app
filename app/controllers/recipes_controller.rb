@@ -17,22 +17,26 @@ class RecipesController < ApplicationController
   end
 
   def create
-    current_user
     @comment = Comment.new(params[:comment])
   	@recipe = Recipe.new(params[:recipe])
     @recipe.user = current_user
-  	if @recipe.save == true
-  		flash[:notice] = 'Recipe Successfully Created'
-      redirect_to recipe_path(@recipe)
-  	else
-  		flash[:notice] = 'Please fill in appropriate fields'
-      render action: "new"
-  	end
+    if @recipe.save
+      flash[:notice] = 'Recipe Successfully Created'
+      redirect_to edit_recipe_path(@recipe)
+    else
+      flash[:notice] = 'Please fill in appropriate fields'
+      render 'new'
+    end
   end
   
   def show
     @recipe = Recipe.find(params[:id])
     @comment = Comment.new
+  end
+
+  def edit
+    @recipe = Recipe.find(params[:id])
+    @recipe_ingredient = @recipe.recipe_ingredients.new
   end
 
 end

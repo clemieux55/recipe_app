@@ -9,7 +9,7 @@ describe 'viewing the homepage' do
 
   it 'has a sign up button' do 
     visit root_path
-    expect(page).to have_link('Sign up')
+    expect(page).to have_link('Sign Up')
   end
 end
 

@@ -18,5 +18,7 @@ describe Recipe do
 
     it { should validate_presence_of(:user) }
     it { should_not allow_mass_assignment_of(:user) }
+
+    it { should have_many(:ingredients).through(:recipe_ingredients) }
   end
 end

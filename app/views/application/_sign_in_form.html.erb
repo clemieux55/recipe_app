@@ -1,9 +1,11 @@
 <% if user_signed_in? %>
-<p class="show-user-email">Hello!<br> 
-<%= current_user.email %><br>
-</p>
- <%= button_to "Sign out", destroy_user_session_path, :method => :delete, :class => "btn btn-danger" %>
- <%= link_to 'Edit Information', edit_user_registration_path, :method => :get, id: 'edit-information' %>
+	<p class="show-user-email">Hello!<br> 
+	<%= current_user.email %><br>
+	</p>
+	<div class="btn-group">
+	 	<%= link_to "Sign out", destroy_user_session_path, :class => "btn btn-danger" %>
+	 	<%= link_to 'Edit Information', edit_user_registration_path, :method => :get, id: 'edit-information', :class => 'btn btn-danger' %>
+	 </div>
 <% end %>
 
 <div id="sign-in-form">
@@ -14,9 +16,9 @@
 	    <%= f.check_box :remember_me %>
 	    <%= f.submit 'Log In', id: 'Log In', :class => "btn btn-warning", :method => :post %>
 	  <% end %>
-	  <%= link_to "Sign up", new_user_registration_path %>
 	<% end %>
 </div>
+
 <script type="text/jscript">
 $(document).ready(function() {
 	var $dialog = $('<div></div>')
