@@ -10,4 +10,6 @@ class ApplicationController < ActionController::Base
 	def search
   	@search = Recipe.search(params[:q])
 	end
+
+
 end

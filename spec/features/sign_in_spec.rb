@@ -20,4 +20,11 @@ describe 'user log in' do
     click_on 'Log In'
     expect(page).to have_content 'Invalid email or password'
   end
+
+  it 'will allow the user to sign out' do 
+    sign_in_as valid_user
+    expect(page).to have_link('Sign out')
+    click_on 'Sign out'
+    expect(current_path).to eql(root_path)
+  end
 end
