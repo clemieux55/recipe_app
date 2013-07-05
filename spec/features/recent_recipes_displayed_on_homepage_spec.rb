@@ -20,7 +20,7 @@ describe 'homepage content' do
   end
 
   it 'should have a recent recipe field' do
-    expect(page).to have_content('Last Three Recipes')
+    expect(page).to have_content('Recent Recipes')
   end
 
   it 'should have the last three recipes created' do

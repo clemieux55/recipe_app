@@ -13,13 +13,13 @@ feature "User can click on an All Recipes and view all the recipes created", %q{
 
 	let(:user) { FactoryGirl.create(:user) }
 
-	scenario 'User can view all the recipes' , focus: true  do 
+	scenario 'User can view all the recipes'  do 
 		visit root_path
 		sign_in_as user
 		expect(page).to have_link 'All Recipes'
 	end
 
-	scenario 'Click on all recipes brings you to the correct path', focus: true  do 
+	scenario 'Click on all recipes brings you to the correct path' do 
 		visit root_path
 		sign_in_as user
 		click_on 'All Recipes'

@@ -34,7 +34,7 @@ class RecipeSeeder
 																	goodness and had a greate hint of Hickory smoked bacon'
 																		})
 				new_recipe.user = user
-				new_recipe.save
+				new_recipe.save!
 			end
 		end
 	end

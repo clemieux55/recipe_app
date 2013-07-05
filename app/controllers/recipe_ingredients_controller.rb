@@ -7,7 +7,7 @@ class RecipeIngredientsController < ApplicationController
 		if recipe_ingredient.save
 			redirect_to edit_recipe_path(@recipe)
 		else
-			flash[:error] = 'nope'
+			flash[:error] = 'Recipe not Created!'
 			redirect_to edit_recipe_path(@recipe)
 			
 		end

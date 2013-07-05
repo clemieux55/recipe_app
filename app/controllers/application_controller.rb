@@ -11,5 +11,4 @@ class ApplicationController < ActionController::Base
   	@search = Recipe.search(params[:q])
 	end
 
-
 end

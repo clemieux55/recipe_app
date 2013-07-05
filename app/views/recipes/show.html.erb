@@ -2,6 +2,9 @@
 	<div id="recipe-container">
 		<h2><%= @recipe.title %></h2><br>
 	</div>
+	<% if @recipe.user == current_user %>
+		<%= link_to 'Edit Recipe', edit_recipe_path(@recipe), :class => 'btn btn-warning' %>
+		<% end %>
 
 		<div id="recipe-description-container">
 			<h4>Description:</h4>
@@ -28,9 +31,7 @@
 
 		<div class="comment-body">
 			<%= comment.body %><br>
-		</div>
-
-		<% end %>
+		</div>		<% end %>
 
 
 

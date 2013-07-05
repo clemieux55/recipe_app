@@ -25,6 +25,7 @@ class RecipesController < ApplicationController
       redirect_to edit_recipe_path(@recipe)
     else
       flash[:notice] = 'Please fill in appropriate fields'
+      render 'new'
     end
   end
   
