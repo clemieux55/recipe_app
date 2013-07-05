@@ -1,32 +1,25 @@
-<div class="container">
-	<div class="row inner-banner-row">
-		<h1 class="heading">Welcome
-			<p>Top Notch Recipes Secretly Taken From Grandmas Recipe Book</p>
-		</h1>
-		<div class="chicken-image"><%= image_tag("chicken-parmigiana-13.jpg") %></div>
+<div class="row inner-banner-row">
+	<h1 class="heading">Welcome
+		<p>Top Notch Recipes Secretly Taken From Grandmas Recipe Book</p>
+	</h1>
+	<div class="chicken-image">
+		<%= image_tag("chicken-parmigiana-13.jpg") %>
 	</div>
 </div>
 
-<h3 class="newest-recipes">Last Three Recipes Added</h3>
+<h4 class="newest-recipies">Recent Recipes</h4>
 <div class="h4-border-div"></div>
-	<div class="recently-added">
+
+<div class="row">
 	<% @recipes.each do |recipe| %>
-		<div class="span4 offset1">
-			<div class="recipe-title">
-				<h3>
-					<%= recipe.title %>
-				</h3><br>
-			</div>
-			<div class="recipe-description">
+		<div class="recipe-title span3">
 			<h4>
-				<%= recipe.description %>
-			</h4><br>
-			<% recipe.ingredients.each do |ingredient| %>
+				<%= recipe.title %> :<br>
+			</h4>
 			<h5>
-				<%= ingredient.name %>
+				<%= recipe.description %><br>
 			</h5>
-			<% end %>
-			</div>
+
 		</div>
 	<% end %>
 </div>

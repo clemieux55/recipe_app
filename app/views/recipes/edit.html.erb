@@ -1,2 +1,30 @@
-<h1>Recipes#edit</h1>
-<p>Find me in app/views/recipes/edit.html.erb</p>
+<h1>Edit
+	<%= @recipe.title %>
+</h1>
+
+<div id="container">
+	<div id="recipe-container">
+		<h2><%= @recipe.title %></h2><br>
+	</div>
+
+	<div id="recipe-description-container">
+		<h4>Description:</h4>
+		<%= @recipe.description %>
+	</div>
+
+	<div id="recipe-ingredients-container">
+		<h4>Ingredients :</h4>
+		<% @recipe.recipe_ingredients.each do |ri| %>
+			<%= ri.measurement %>
+			<%= ri.ingredient.try(:name) %><br>
+		<% end %>
+	</div>
+
+<div class='add-recipe-ingredient'>
+	<%= simple_form_for [@recipe, @recipe_ingredient] do |f| %>
+		<%= f.input :value %>
+		<%= f.input :unit %>
+		<%= f.input :ingredient_id, as: :select, collection: Ingredient.all.collect{|i| [i.name, i.id]}, :label => "Ingredients", input_html: { :class => "chzn-select multiple", "data-placeholder" => "Ingredients", :id => 'ingredient-input' } %>
+		<%= f.submit 'Add Ingredient', :class => 'btn btn-warning' %>
+	<% end %>
+</div>

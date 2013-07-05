@@ -14,6 +14,9 @@ gem 'ransack'
 gem 'kaminari'
 gem "chosen-rails"
 gem 'carrierwave'
+gem 'twitter'
+gem 'omniauth'
+gem 'omniauth-twitter'
 
 
 

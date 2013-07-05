@@ -1,8 +1,11 @@
 RecipeApp::Application.routes.draw do
   devise_for :users
 
+  devise_for :users do get '/users/sign_out' => 'devise/sessions#destroy' end
+
 resources :recipes do 
-  resources :ingredients 
+  resources :ingredients
+  resources :recipe_ingredients
 end
 
 resources :recipes do 
@@ -23,6 +26,9 @@ resources :users, :only => [] do
 end
 
 resources :pages, :only => [:show, :index]
+
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
