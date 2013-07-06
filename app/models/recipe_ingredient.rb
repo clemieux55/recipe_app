@@ -4,8 +4,10 @@ class RecipeIngredient < ActiveRecord::Base
   belongs_to :ingredient
   validates_presence_of :ingredient_id
   validates_presence_of :recipe_id
+  validates_presence_of :unit
+  validates_presence_of :value
   
   def measurement
-  	[value, unit].join(" ")
+  	[value, unit].join(" - ")
   end
 end
