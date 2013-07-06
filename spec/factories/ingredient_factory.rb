@@ -1,7 +1,7 @@
 FactoryGirl.define do
-	sequence(:name) { |n| "ing#{n}redient" }
+	
 		
 	factory :ingredient do
-		name
+		sequence(:name) { |n| "ing#{n}redient" }
 	end
 end

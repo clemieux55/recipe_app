@@ -12,18 +12,13 @@ feature "user sees recipe ingredients", %q{
 
   let(:user) { FactoryGirl.create(:user) }
 
-  let(:ingredient1) { FactoryGirl.create(:ingredient) }
-  let(:ingredient2) { FactoryGirl.create(:ingredient) }
-  let(:ingredient3) { FactoryGirl.create(:ingredient) }
-  let(:recipe) { FactoryGirl.create(:recipe, ingredients: [ingredient1, ingredient2, ingredient3])}
-  
-  scenario "user sees all of the ingredients" do
+  before :each do
     sign_in_as user
+    FactoryGirl.create(:recipe)
+  end
+
+  scenario 'User can view ingredients for a recipe', focus: true do 
     visit recipe_path(recipe)
-
-    expect(page).to have_content ingredient1.name
-    expect(page).to have_content ingredient2.name
-    expect(page).to have_content ingredient3.name
-
-  end 
+    expect(page).to have_content recipe.recipe_ingredients
+  end
 end
