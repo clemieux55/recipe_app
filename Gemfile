@@ -39,6 +39,8 @@ group :test, :development do
   gem 'pry'
   gem 'shoulda-matchers'
   gem 'valid_attribute'
+  gem 'vcr'
+  gem 'webmock', '>= 1.12.0'
 end
 
 group :test do 

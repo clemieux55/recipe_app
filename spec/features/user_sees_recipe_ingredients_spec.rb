@@ -11,13 +11,13 @@ feature "user sees recipe ingredients", %q{
   # - I can save the ingredients used with a recipe
 
   let(:user) { FactoryGirl.create(:user) }
+  let!(:recipe) { FactoryGirl.create(:recipe) }
 
   before :each do
     sign_in_as user
-    FactoryGirl.create(:recipe)
   end
 
-  scenario 'User can view ingredients for a recipe', focus: true do 
+  scenario 'User can view ingredients for a recipe' do 
     visit recipe_path(recipe)
     expect(page).to have_content recipe.recipe_ingredients
   end

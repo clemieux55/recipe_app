@@ -10,6 +10,8 @@ require 'lorem-ipsum'
 require 'shoulda-matchers'
 require 'capybara/rails'
 require 'database_cleaner'
+require 'vcr'
+require 'test/unit'
 
 
 
