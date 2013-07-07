@@ -11,4 +11,7 @@ class ApplicationController < ActionController::Base
   	@search = Recipe.search(params[:q])
 	end
 
+	def yummly
+		@yummly = Yummly.new(params[:q])
+	end
 end
