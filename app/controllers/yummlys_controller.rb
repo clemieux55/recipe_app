@@ -1,7 +1,7 @@
 class YummlysController < ApplicationController
 
-	def new
-		@yummly = Yummly.new(params[:q])
+	def index
+		@yummly = Yummly.new
 
 	end
 

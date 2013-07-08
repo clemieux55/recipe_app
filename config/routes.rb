@@ -27,7 +27,7 @@ end
 
 resources :pages, :only => [:show, :index]
 
-
+resources :yummlys
 
 
   # The priority is based upon order of creation:

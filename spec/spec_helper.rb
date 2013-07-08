@@ -38,6 +38,11 @@ RSpec.configure do |config|
   config.after(:each) do
     DatabaseCleaner.clean
   end
+
+  VCR.configure do |c|
+    c.cassette_library_dir = 'vcr_cassettes'
+    c.hook_into :webmock
+  end
   # ## Mock Framework
   #
   # If you prefer to use mocha, flexmock or RR, uncomment the appropriate line:
