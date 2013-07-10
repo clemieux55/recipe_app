@@ -13,10 +13,7 @@ gem 'simple_form'
 gem 'ransack'
 gem 'kaminari'
 gem "chosen-rails"
-gem 'carrierwave'
-gem 'twitter'
-gem 'omniauth'
-gem 'omniauth-twitter'
+
 
 
 
@@ -39,12 +36,13 @@ group :test, :development do
   gem 'pry'
   gem 'shoulda-matchers'
   gem 'valid_attribute'
-  gem 'vcr'
-  gem 'webmock', '>= 1.12.0'
 end
 
 group :test do 
   gem 'database_cleaner'
+  gem 'vcr'
+  gem 'webmock', '>= 1.12.0'
+  
 end
 
   gem 'uglifier', '>= 1.0.3'

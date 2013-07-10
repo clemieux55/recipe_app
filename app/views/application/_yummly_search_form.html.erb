@@ -1,4 +1,4 @@
-<%= simple_form_for "yummly", url: yummlys_path, method: :get do |yum| %>
-	<%= yum.input :yummly, placeholder: 'Search Yummly', label: 'Yummly' %>
-	<%= yum.submit 'Yummly', :class => 'btn btn-warning' %>
+<%= simple_form_for :yummly, method: 'get', controller: 'yummlys', url: yummlys_path do |yum| %>
+	<%= yum.input :yum, placeholder: 'Search Yummly', label: false %>
+	<%= yum.submit "Yummlys", :class => "btn btn-warning" %>
 <% end %>

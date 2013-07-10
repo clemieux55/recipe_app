@@ -1,36 +1,40 @@
-class Yummly
+require 'json'
 
-	attr_accessor :search
+	class Yummly
 
-	def initialize(search={})
-		@search = search
+	 	attr_accessor :response, :attributes
+
+	 	def initialize(query)
+	 		@query = query
+	 	end
+
+		def self.app_key
+			@app_key = "18489ae5335488b2ce5f819b503a6337"
+		end
+
+		def self.app_id
+			@app_id = "006910f9"
+		end
+
+		def response
+			@response ||= send_request
+		end
+
+		def recipes
+			@recipes ||= response['matches'].map do |recipe|
+				{ :name => recipe['recipeName'], :ingredients => recipe['ingredients'], :image => recipe['smallImageUrls'], :id => recipe['id'] }
+			
+			end
+		end
+
+	private
+		
+		def send_request
+			uri = URI("http://api.yummly.com/v1/api/recipes?_app_id=#{Yummly.app_id}&_app_key=#{Yummly.app_key}&q=#{@query}&requirePictures=true")
+			response = Net::HTTP.get(uri)
+			JSON.parse(response)
+		end
+
 	end
 
-	def app_key
-		@app_key = "53ec12be3b85d0086a735dba82e215e2"
-	end
-
-	def app_id
-		@app_id = "4b0aee5d"
-	end
-
-	def send_request
-		uri = URI("http://api.yummly.com/v1/api/recipes?_app_id=#{app_id}&_app_key=#{app_key}&q=#{@search}")	
-		response = JSON.parse(Net::HTTP.get(uri))['matches']
-		@response = response.first
-	end
-
-	def name(attributes)
-		attributes['recipeName']
-	end
-
-	def ingredients(attributes)
-		attributes['ingredients']
-	end
-
-	def cuisine(attributes)
-		attributes['attributes']['cuisine']
-	end
-
-end
 

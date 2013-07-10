@@ -1,0 +1,20 @@
+<h3>Yummly Search Results</h3>
+	<%= @recipes.each do |recipe| %>
+<div class='recipe-description-container'>
+		<% image = recipe[:image].first %>
+		<img src="<%= image %>" class="recipe-image" style="height:100px"><br>
+		<%= link_to "Yummly!", "http://www.yummly.com/recipe/#{recipe[:id]}", :class => "btn btn-success" %>
+		</img>
+		<h5>
+			<%= recipe[:name] %><br>
+		</h5>
+		<div class="search-recipe-description">
+			<h6>Ingredients: </h6>
+			<% recipe[:ingredients].each do |i| %>
+				<%= i %><br>
+			<% end %>
+		</div>
+	<% end %>
+</div>
+
+

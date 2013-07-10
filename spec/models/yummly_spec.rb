@@ -1,26 +1,28 @@
 require 'spec_helper'
 
-describe 'Yummly', focus: true do 
-	let(:yummly) { Yummly.new('lasagna') }
-
-	it 'sends a request to the yummly api and returns a hash' do 
-		VCR.insert_cassette('yummly')
-		response = yummly.send_request
-		expect(response).to be_kind_of(Hash)
+describe 'Yummly' do 
+	VCR.use_cassette('spec/cassettes') do 
+		let!(:yummly) { Yummly.new('lasagna') }
 	end
 
-	it 'returns recipes for the criteria inputted' do 
-		VCR.use_cassette('yummly_response') do 
-			response = yummly.send_request
-			expect(yummly.name(response)).to include('Lasagna')
-			expect(yummly.ingredients(response)).to include('salt')
-			expect(yummly.cuisine(response)).to include('Italian')
+	it 'sends a request to the yummly api and returns a hash' do 
+			expect(yummly).to_not be_nil
+			expect(yummly).to be_kind_of(Yummly)
 		end
-	end 
+
+	describe '.parse' do
+		it 'extracts the recipes' do
+			VCR.use_cassette('spec/cassettes') do
+				recipes = yummly.recipes
+				pesto = recipes.find { |recipe| recipe[:name] == 'Slow Cooker Pesto Spinach Lasagna' }
+
+				pesto[:ingredients].should include 'baby spinach'
+				pesto[:ingredients].should include 'water'
+				pesto[:ingredients].should include 'lasagna noodles'
+				pesto[:id].should include 'Slow-cooker-pesto-spinach-lasagna-310218'
+			end
+		end
+	end
 end
 
 
-VCR.configure do |c|
-  c.cassette_library_dir = 'spec/vcr_cassettes'
-  c.hook_into :webmock # or :fakeweb
-end

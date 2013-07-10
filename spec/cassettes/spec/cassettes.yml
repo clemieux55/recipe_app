@@ -1,0 +1,605 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.yummly.com/v1/api/recipes?_app_id=4b0aee5d&_app_key=53ec12be3b85d0086a735dba82e215e2&q=lasagna
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=1800, public
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 10 Jul 2013 15:47:11 GMT
+      Expires:
+      - Wed, 10 Jul 2013 16:17:10 GMT
+      Server:
+      - nginx
+      X-Yummly-Request-Id:
+      - dc48f2d0-e9cb-474a-968c-9aeaca9987e4
+      Content-Length:
+      - '26826'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"attribution":{"html":"<a href=''http://www.yummly.com/recipes/lasagna''>lasagna
+        recipes</a> search powered by <img alt=''Yummly'' src=''http://static.yummly.com/api-logo.png''/>","url":"http://www.yummly.com/recipes/lasagna","text":"lasagna
+        recipes: search powered by Yummly","logo":"http://static.yummly.com/api-logo.png"},"totalMatchCount":3543,"facetCounts":{},"matches":[{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.5,"sweet":0.8333333333333334,"bitter":0.8333333333333334,"meaty":1.0,"piquant":0.0},"rating":5,"id":"World_s-Best-Lasagna-Allrecipes","smallImageUrls":["http://i2.yummly.com/World_s-Best-Lasagna-Allrecipes-1.s.png","http://i.yummly.com/World_s-Best-Lasagna-Allrecipes-68573.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":11700.0,"ingredients":["white
+        sugar","fennel seeds","egg","basil leaves","ricotta cheese","sweet italian
+        sausage","salt","lean ground beef","black pepper","italian seasoning","minced
+        onion","grated parmesan cheese","fresh parsley","mozzarella cheese","lasagna
+        noodles","crushed tomatoes","salt","crushed garlic","tomato sauce","water","tomato
+        paste"],"recipeName":"World''s Best Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.6666666666666666,"sweet":0.5,"bitter":0.8333333333333334,"meaty":0.6666666666666666,"piquant":0.0},"rating":5,"id":"White-Cheese-Chicken-Lasagna-Allrecipes","smallImageUrls":["http://i2.yummly.com/White-Cheese-Chicken-Lasagna-Allrecipes-2.s.png","http://i.yummly.com/White-Cheese-Chicken-Lasagna-Allrecipes-73236.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":4500.0,"ingredients":["butter","onion","spinach","fresh
+        parsley","black pepper","chicken broth","all-purpose flour","grated parmesan
+        cheese","salt","shredded mozzarella cheese","clove garlic","dried basil","chicken
+        meat","grated parmesan cheese","lasagna noodles","milk","ricotta cheese","dried
+        oregano"],"recipeName":"White Cheese Chicken Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.0,"sweet":0.16666666666666666,"bitter":0.8333333333333334,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Slow-cooker-pesto-spinach-lasagna-310218","smallImageUrls":["http://i.yummly.com/Slow-cooker-pesto-spinach-lasagna-310218-274671.s.jpg"],"sourceDisplayName":"A
+        Year of Slow Cooking","totalTimeInSeconds":null,"ingredients":["ricotta cheese","lasagna
+        noodles","mozzarella cheese","grated parmesan cheese","water","baby spinach","pesto","prepared
+        pasta sauce"],"recipeName":"Slow Cooker Pesto Spinach Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.16666666666666666,"sweet":0.8333333333333334,"bitter":0.8333333333333334,"meaty":0.8333333333333334,"piquant":0.0},"rating":5,"id":"Spinach-Lasagna-Iii-Allrecipes","smallImageUrls":["http://i.yummly.com/Spinach-Lasagna-Iii-Allrecipes-81019.s.png","http://i.yummly.com/Spinach-Lasagna-Iii-Allrecipes-80965.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":6600.0,"ingredients":["onion","dried
+        oregano","black pepper","ricotta cheese","lasagna noodles","shredded mozzarella
+        cheese","grated parmesan cheese","basil leaves","spinach","minced garlic","pasta
+        sauce","romano cheese","fresh mushrooms","salt","egg","olive oil"],"recipeName":"Spinach
+        Lasagna III"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.16666666666666666,"sour":0.16666666666666666,"sweet":0.16666666666666666,"bitter":0.16666666666666666,"meaty":0.16666666666666666,"piquant":0.0},"rating":5,"id":"Vegetable-Lasagna-The-Pioneer-Woman-Cooks-_-Ree-Drummond-41176","smallImageUrls":["http://i.yummly.com/Vegetable-Lasagna-The-Pioneer-Woman-Cooks-_-Ree-Drummond-41176-1697.s.jpg","http://i.yummly.com/Vegetable-Lasagna-The-Pioneer-Woman-Cooks-_-Ree-Drummond-41176-1384.s.jpg","http://i.yummly.com/Vegetable-Lasagna-The-Pioneer-Woman-Cooks-_-Ree-Drummond-41176-35.s.jpg"],"sourceDisplayName":"The
+        Pioneer Woman","totalTimeInSeconds":null,"ingredients":["tomatoes","parmesan
+        cheese","mozzarella cheese","eggs","ricotta cheese","onions","kosher salt","kosher
+        salt","white wines","red pepper flakes","garlic cloves","black pepper","white
+        mushrooms","olive oil","parmesan","red bell pepper","yellow squashes","fresh
+        parsley","lasagna noodles"],"recipeName":"Vegetable Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.5,"sweet":0.8333333333333334,"bitter":0.6666666666666666,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Linda_s-Lasagna-Allrecipes","smallImageUrls":["http://i2.yummly.com/Linda_s-Lasagna-Allrecipes.s.png","http://i.yummly.com/Linda_s-Lasagna-Allrecipes-79954.s.png","http://i.yummly.com/Linda_s-Lasagna-Allrecipes-79932.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":9000.0,"ingredients":["water","garlic
+        powder","grated parmesan cheese","onion","tomato paste","dried oregano","shredded
+        mozzarella cheese","lean ground beef","cottage cheese","salt","lasagna noodles","crushed
+        tomatoes","egg","white sugar","black pepper"],"recipeName":"Linda''s Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.8333333333333334,"sweet":0.8333333333333334,"bitter":0.8333333333333334,"meaty":0.6666666666666666,"piquant":0.0},"rating":5,"id":"Deep-Dish-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Deep-Dish-Lasagna-Allrecipes-50502.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":6600.0,"ingredients":["sweet
+        italian sausage","onions","garlic salt","black pepper","spinach","tomato sauce","fresh
+        parsley","shredded mozzarella cheese","tomato paste","italian seasoning","minced
+        garlic","basil leaves","eggs","dried oregano","lasagna noodles","water","grated
+        parmesan cheese","part skim ricotta cheese"],"recipeName":"Deep Dish Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.8333333333333334,"sweet":0.5,"bitter":0.8333333333333334,"meaty":0.8333333333333334,"piquant":0.6666666666666666},"rating":5,"id":"Veggie-lasagna-335101","smallImageUrls":["http://i.yummly.com/Veggie-lasagna-335101-297905.s.jpg"],"sourceDisplayName":"Baked
+        Bree","totalTimeInSeconds":null,"ingredients":["pepper","flat leaf parsley","romano","egg","dried
+        oregano","red peppers","mozzarella cheese","parmesan cheese","red pepper flakes","dried
+        basil","peppers","garlic","mushrooms","baby spinach","lasagna noodles","onion","salt","ricotta
+        cheese","olive oil"],"recipeName":"Veggie Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.6666666666666666,"sweet":0.8333333333333334,"bitter":0.6666666666666666,"meaty":0.8333333333333334,"piquant":0.0},"rating":5,"id":"American-Lasagna-Allrecipes","smallImageUrls":["http://i2.yummly.com/American-Lasagna-Allrecipes.s.png","http://i.yummly.com/American-Lasagna-Allrecipes-62433.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":7200.0,"ingredients":["salt","lasagna
+        noodles","grated parmesan cheese","lean ground beef","dried oregano","part
+        skim ricotta cheese","tomato paste","shredded mozzarella cheese","parsley","fresh
+        basil","salt","grated parmesan cheese","brown sugar","diced tomatoes","beaten
+        eggs","onion","minced garlic"],"recipeName":"American Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.6666666666666666,"sweet":0.6666666666666666,"bitter":0.8333333333333334,"meaty":0.8333333333333334,"piquant":0.0},"rating":4,"id":"Crock-Pot-Lasagna-Recipezaar_4","smallImageUrls":["http://i2.yummly.com/Crock-Pot-Lasagna-Recipezaar_4.s.png","http://i.yummly.com/Crock-Pot-Lasagna-Recipezaar_4-306012.s.jpg"],"sourceDisplayName":"Food.com","totalTimeInSeconds":1140.0,"ingredients":["dried
+        oregano","tomato sauce","grated parmesan cheese","lean ground beef","tomato
+        paste","shredded mozzarella cheese","lasagna noodles","garlic cloves","onion","cottage
+        cheese","salt"],"recipeName":"Crock Pot Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.5,"sour":0.8333333333333334,"sweet":0.16666666666666666,"bitter":0.3333333333333333,"meaty":0.3333333333333333,"piquant":0.5},"rating":5,"id":"Simple-Spinach-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Simple-Spinach-Lasagna-Allrecipes-94503.s.png","http://i.yummly.com/Simple-Spinach-Lasagna-Allrecipes-93686.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":6000.0,"ingredients":["dried
+        oregano","shredded mozzarella cheese","fresh parsley","spaghetti sauce","extra
+        virgin olive oil","black pepper","lasagna noodles","grated parmesan cheese","crushed
+        garlic","dried basil","egg","water","onion","non-fat cottage cheese","salt","spinach"],"recipeName":"Simple
+        Spinach Lasagna"},{"attributes":{},"flavors":{"salty":0.5,"sour":0.6666666666666666,"sweet":0.3333333333333333,"bitter":0.6666666666666666,"meaty":0.8333333333333334,"piquant":0.0},"rating":5,"id":"Eggplant-zucchini-lasagna-with-fontina-310201","smallImageUrls":["http://i.yummly.com/Eggplant-zucchini-lasagna-with-fontina-310201-274654.s.jpg"],"sourceDisplayName":"Big
+        Girls Small Kitchen","totalTimeInSeconds":null,"ingredients":["lasagna noodles","kosher
+        salt","dried oregano","olive oil","plum tomatoes","freshly grated parmesan","fontina","zucchini","eggplant","ricotta","garlic"],"recipeName":"Eggplant-Zucchini
+        Lasagna with Fontina"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.3333333333333333,"sweet":0.8333333333333334,"bitter":0.8333333333333334,"meaty":0.3333333333333333,"piquant":0.0},"rating":4,"id":"Slow-Cooker-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Slow-Cooker-Lasagna-Allrecipes-74952.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":15000.0,"ingredients":["shredded
+        mozzarella cheese","pasta sauce","roll","lasagna noodles","ricotta cheese","parsley"],"recipeName":"Slow
+        Cooker Lasagna"},{"attributes":{"course":["Main Dishes","Soups"],"cuisine":["Italian"]},"flavors":null,"rating":5,"id":"Sausage-lasagna-soup-350847","smallImageUrls":["http://i.yummly.com/Sausage-lasagna-soup-350847-341658.s.jpg"],"sourceDisplayName":"Cinnamon
+        Girl","totalTimeInSeconds":660.0,"ingredients":["garlic","italian seasoning","chicken
+        broth","sea salt","green bell pepper","dried thyme","black pepper","parmesan
+        cheese","lasagna noodles","mozzarella cheese","dried oregano","ricotta cheese","olive
+        oil","diced tomatoes","yellow onion","italian sausage","sea salt","fresh parsley","tomato
+        paste","black pepper"],"recipeName":"Sausage Lasagna Soup"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.3333333333333333,"sour":0.0,"sweet":0.16666666666666666,"bitter":0.3333333333333333,"meaty":0.6666666666666666,"piquant":0.0},"rating":5,"id":"Miracle-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Miracle-Lasagna-Allrecipes-90732.s.png","http://i.yummly.com/Miracle-Lasagna-Allrecipes-90266.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":4200.0,"ingredients":["ricotta
+        cheese","grated parmesan cheese","lasagna noodles","traditional italian sauce","shredded
+        mozzarella cheese"],"recipeName":"Miracle Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.3333333333333333,"sour":0.5,"sweet":0.5,"bitter":0.3333333333333333,"meaty":0.8333333333333334,"piquant":0.0},"rating":5,"id":"Extra_easy-Lasagna-My-Recipes","smallImageUrls":["http://i.yummly.com/Extra_easy-Lasagna-My-Recipes-122047.s.png"],"sourceDisplayName":"MyRecipes","totalTimeInSeconds":null,"ingredients":["ricotta
+        cheese","shredded mozzarella cheese","lean ground beef","tomato","lasagna
+        noodles","hot water"],"recipeName":"Extra-Easy Lasagna"},{"attributes":{},"flavors":{"salty":0.16666666666666666,"sour":0.3333333333333333,"sweet":0.0,"bitter":0.16666666666666666,"meaty":0.3333333333333333,"piquant":0.0},"rating":5,"id":"Mushroom-lasagna-305429","smallImageUrls":["http://i.yummly.com/Mushroom-lasagna-305429-268883.s.jpg"],"sourceDisplayName":"Smitten
+        Kitchen","totalTimeInSeconds":null,"ingredients":["all-purpose flour","garlic","ground
+        nutmeg","salt","whole milk","freshly grated parmesan","cremini mushrooms","lasagna
+        noodles","olive oil","ground black pepper","unsalted butter"],"recipeName":"Mushroom
+        Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.5,"sour":0.0,"sweet":0.16666666666666666,"bitter":0.5,"meaty":1.0,"piquant":0.0},"rating":4,"id":"Hearty-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Hearty-Lasagna-Allrecipes-88803.s.png","http://i.yummly.com/Hearty-Lasagna-Allrecipes-88447.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":4200.0,"ingredients":["eggs","traditional
+        italian sauce","grated parmesan cheese","shredded mozzarella cheese","ricotta
+        cheese","ground beef","lasagna noodles"],"recipeName":"Hearty Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":null,"rating":5,"id":"Eggplant-parmesan-lasagna-348410","smallImageUrls":["http://i.yummly.com/Eggplant-parmesan-lasagna-348410-313048.s.jpg"],"sourceDisplayName":"Every
+        Day with Rachael Ray","totalTimeInSeconds":null,"ingredients":["part skim
+        mozzarella cheese","cottage cheese","garlic","lasagna noodles","fat","pepper","italian
+        eggplants","large egg","diced tomatoes","grated parmesan cheese","extra virgin
+        olive oil","salt"],"recipeName":"Eggplant Parmesan Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.0,"sweet":0.16666666666666666,"bitter":0.8333333333333334,"meaty":1.0,"piquant":0.0},"rating":4,"id":"Deadly-Delicious-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Deadly-Delicious-Lasagna-Allrecipes-65097.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":4200.0,"ingredients":["ricotta
+        cheese","grated parmesan cheese","spinach","pork sausage","lasagna noodles","spaghetti
+        sauce","shredded mozzarella cheese"],"recipeName":"Deadly Delicious Lasagna"},{"attributes":{"course":["Main
+        Dishes"]},"flavors":null,"rating":5,"id":"Turkey-_or-chicken_-lasagna-with-sage-and-three-cheeses-309942","smallImageUrls":["http://i.yummly.com/Turkey-_or-chicken_-lasagna-with-sage-and-three-cheeses-309942-346234.s.jpg","http://i.yummly.com/Turkey-_or-chicken_-lasagna-with-sage-and-three-cheeses-309942-274395.s.jpg"],"sourceDisplayName":"Kalyn''s
+        Kitchen","totalTimeInSeconds":null,"ingredients":["onion powder","turkey gravy","lasagna
+        noodles","homemade turkey stock","grated parmesan cheese","low fat cheddar
+        cheese","low fat mozzarella cheese","reduced-fat sour cream","cooked turkey","chopped
+        fresh sage","garlic powder"],"recipeName":"Turkey (or chicken) Lasagna with
+        Sage and Three Cheeses"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.8333333333333334,"sweet":0.6666666666666666,"bitter":0.8333333333333334,"meaty":0.5,"piquant":0.0},"rating":5,"id":"Meatball-Lasagna-TasteOfHome","smallImageUrls":["http://i.yummly.com/Meatball-Lasagna-Allrecipes-75370.s.png"],"sourceDisplayName":"Taste
+        of Home","totalTimeInSeconds":4800.0,"ingredients":["tomato paste","garlic
+        salt","cooked meatballs","dried basil","diced tomatoes","ricotta cheese","grated
+        parmesan cheese","lasagna noodles","garlic clove","onion","shredded mozzarella
+        cheese","parsley flakes","water","sugar","egg","tomato sauce"],"recipeName":"Meatball
+        Lasagna"},{"attributes":{},"flavors":null,"rating":5,"id":"Creamy-artichoke-lasagna-bake-recipe-306934","smallImageUrls":["http://i.yummly.com/Creamy-artichoke-lasagna-bake-recipe-306934-270667.s.jpg"],"sourceDisplayName":"Food
+        Republic","totalTimeInSeconds":null,"ingredients":["egg","garlic","chicken
+        broth","lasagna noodles","all-purpose flour","salt","fresh basil","artichoke
+        hearts","olive oil","half-and-half","parmesan cheese","pine nuts","ricotta
+        cheese"],"recipeName":"Creamy Artichoke Lasagna Bake Recipe"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.3333333333333333,"sour":0.0,"sweet":0.0,"bitter":0.16666666666666666,"meaty":0.6666666666666666,"piquant":0.0},"rating":5,"id":"Extra_easy-Spinach-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Extra_easy-Spinach-Lasagna-Allrecipes-89471.s.png","http://i.yummly.com/Extra_easy-Spinach-Lasagna-Allrecipes-89111.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":4800.0,"ingredients":["italian
+        mushroom","lasagna noodles","ricotta cheese","spinach","shredded mozzarella
+        cheese","water"],"recipeName":"Extra-Easy Spinach Lasagna"},{"attributes":{"course":["Main
+        Dishes"]},"flavors":null,"rating":5,"id":"Portobello-lasagna-with-basil-cream-348864","smallImageUrls":["http://i.yummly.com/Portobello-lasagna-with-basil-cream-348864-313559.s.jpg"],"sourceDisplayName":"Every
+        Day with Rachael Ray","totalTimeInSeconds":null,"ingredients":["pepper","portobello
+        mushroom","milk","onions","basil","salt","flour","heavy cream","cloves","grated
+        parmesan cheese","butter","lasagna noodles"],"recipeName":"Portobello Lasagna
+        with Basil Cream"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.5,"sweet":0.6666666666666666,"bitter":0.8333333333333334,"meaty":0.8333333333333334,"piquant":0.0},"rating":4,"id":"Slow-Cooker-Lasagna-Allrecipes_1","smallImageUrls":["http://i.yummly.com/Slow-Cooker-Lasagna-Allrecipes_1-67301.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":16800.0,"ingredients":["dried
+        oregano","tomato sauce","cottage cheese","lean ground beef","tomato paste","shredded
+        mozzarella cheese","grated parmesan cheese","minced garlic","onion","lasagna
+        noodles","salt"],"recipeName":"Slow Cooker Lasagna"},{"attributes":{},"flavors":{"salty":0.6666666666666666,"sour":0.8333333333333334,"sweet":0.6666666666666666,"bitter":1.0,"meaty":0.5,"piquant":0.0},"rating":5,"id":"Vegetarian-spinach-and-mushroom-lasagna-305001","smallImageUrls":["http://i.yummly.com/Vegetarian-spinach-and-mushroom-lasagna-305001-268646.s.jpg"],"sourceDisplayName":"Simply
+        Recipes","totalTimeInSeconds":null,"ingredients":["tomato sauce","shredded
+        mozzarella cheese","pecorino cheese","lasagna noodles","frozen chopped spinach","salt","fresh
+        basil","dried thyme","crushed tomatoes","sugar","onions","red pepper flakes","garlic","shiitake
+        mushrooms","ricotta cheese","olive oil","tomato paste","water","cremini mushrooms"],"recipeName":"Vegetarian
+        Spinach and Mushroom Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.3333333333333333,"sweet":0.8333333333333334,"bitter":0.6666666666666666,"meaty":0.16666666666666666,"piquant":0.0},"rating":5,"id":"Artichoke-Spinach-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Artichoke-Spinach-Lasagna-Allrecipes-3.s.jpg","http://i.yummly.com/Artichoke-Spinach-Lasagna-Allrecipes-74210.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":4800.0,"ingredients":["artichoke
+        hearts","chopped garlic","pasta sauce","cooking spray","vegetable broth","crumbles","shredded
+        mozzarella cheese","onion","lasagna noodles","spinach","fresh rosemary"],"recipeName":"Artichoke
+        Spinach Lasagna"},{"attributes":{"course":["Main Dishes"]},"flavors":null,"rating":5,"id":"Asparagus-ham-lasagna-348765","smallImageUrls":["http://i.yummly.com/Asparagus-ham-lasagna-348765-313443.s.jpg"],"sourceDisplayName":"Every
+        Day with Rachael Ray","totalTimeInSeconds":null,"ingredients":["grated parmesan
+        cheese","onion","pepper","asparagus","flour","baked ham","salt","butter","lasagna
+        noodles","grated nutmeg","milk"],"recipeName":"Asparagus-Ham Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.5,"sour":0.3333333333333333,"sweet":0.3333333333333333,"bitter":0.5,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Alysia_s-Basic-Meat-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Alysia_s-Basic-Meat-Lasagna-Allrecipes-92335.s.png","http://i.yummly.com/Alysia_s-Basic-Meat-Lasagna-Allrecipes-91677.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":5700.0,"ingredients":["tomato
+        sauce","provolone cheese","eggs","minced garlic","ground beef","dried oregano","grated
+        parmesan cheese","ricotta cheese","olive oil","dried oregano","lasagna noodles","diced
+        onion","spaghetti sauce","shredded mozzarella cheese","milk","garlic powder"],"recipeName":"Alysia''s
+        Basic Meat Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":null,"rating":5,"id":"Slow-cooker-lasagna-335608","smallImageUrls":["http://i.yummly.com/Slow-cooker-lasagna-335608-298416.s.jpg"],"sourceDisplayName":"Baked
+        Bree","totalTimeInSeconds":null,"ingredients":["parmesan","pepper","ricotta
+        cheese","dried basil","salt","garlic","lasagna noodles","flat-leaf parsley","egg","shredded
+        mozzarella","spaghetti sauce","dried oregano"],"recipeName":"Slow Cooker Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.5,"sour":0.6666666666666666,"sweet":0.16666666666666666,"bitter":0.5,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Chicken-And-Spinach-Alfredo-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Chicken-And-Spinach-Alfredo-Lasagna-Allrecipes-99206.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":7200.0,"ingredients":["butter","diced
+        onion","black pepper","heavy cream","cream of mushroom soup","olive oil","shredded
+        mozzarella cheese","lasagna noodles","salt","garlic","spinach","grated parmesan
+        cheese","ricotta cheese","roasted chicken","mushrooms"],"recipeName":"Chicken
+        and Spinach Alfredo Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.16666666666666666,"sour":0.5,"sweet":0.5,"bitter":0.3333333333333333,"meaty":0.5,"piquant":0.5},"rating":5,"id":"Mushroom-Lasagna-Serious-Eats-200809","smallImageUrls":["http://i.yummly.com/Mushroom-Lasagna-Serious-Eats-200809-40601.s.png"],"sourceDisplayName":"Serious
+        Eats","totalTimeInSeconds":null,"ingredients":["all-purpose flour","black
+        pepper","unsalted butter","ground nutmeg","milk","olive oil","portobello mushrooms","parmesan","lasagna
+        noodles","garlic clove"],"recipeName":"Mushroom Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.5,"sweet":0.6666666666666666,"bitter":0.8333333333333334,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Classic-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Classic-Lasagna-Allrecipes-3.s.jpg","http://i.yummly.com/Classic-Lasagna-Allrecipes-98063.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":7200.0,"ingredients":["italian
+        sausage","tomato sauce","pepper","dried oregano","lasagna noodles","beaten
+        eggs","shredded mozzarella cheese","salt","garlic salt","sliced mushrooms","grated
+        parmesan cheese","dried thyme","ground beef","dried basil","ricotta cheese","olive
+        oil"],"recipeName":"Classic Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.6666666666666666,"sour":0.3333333333333333,"sweet":0.3333333333333333,"bitter":0.5,"meaty":0.8333333333333334,"piquant":0.5},"rating":5,"id":"Roasted-Vegetable-Lasagna-TasteOfHome","smallImageUrls":["http://i.yummly.com/Roasted-Vegetable-Lasagna-Allrecipes-1.s.jpg","http://i.yummly.com/Roasted-Vegetable-Lasagna-Allrecipes-82553.s.png","http://i.yummly.com/Roasted-Vegetable-Lasagna-Allrecipes-82423.s.png"],"sourceDisplayName":"Taste
+        of Home","totalTimeInSeconds":5700.0,"ingredients":["olive oil","salt","spaghetti
+        sauce","fresh mushrooms","zucchini","minced garlic","fresh basil","eggplant","egg
+        substitute","pepper","part-skim mozzarella cheese","red pepper","lasagna noodles","grated
+        parmesan cheese","reduced fat ricotta cheese"],"recipeName":"Roasted Vegetable
+        Lasagna"},{"attributes":{"course":["Main Dishes"]},"flavors":null,"rating":5,"id":"Meat-lasagna-347300","smallImageUrls":["http://i.yummly.com/Meat-lasagna-347300-311756.s.jpg"],"sourceDisplayName":"Every
+        Day with Rachael Ray","totalTimeInSeconds":null,"ingredients":["italian tomatoes","parmigiano
+        reggiano cheese","garlic","sweet italian sausage","flour","fresh basil leaves","butter","eggs","mozzarella
+        cheese","lasagna noodles","milk","ricotta cheese","pepper","salt"],"recipeName":"Meat
+        Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.16666666666666666,"sweet":0.6666666666666666,"bitter":0.8333333333333334,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Lasagna-Roll-Ups-Allrecipes","smallImageUrls":["http://i.yummly.com/Lasagna-Roll-Ups-Allrecipes-53235.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":3600.0,"ingredients":["ricotta
+        cheese","spinach","pasta sauce","shredded mozzarella cheese","lasagna noodles","firm
+        tofu","grated parmesan cheese"],"recipeName":"Lasagna Roll Ups"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":null,"rating":5,"id":"Spinach-lasagna-rolls-352461","smallImageUrls":["http://i.yummly.com/Spinach-lasagna-rolls-352461-343476.s.jpg"],"sourceDisplayName":"Skinnytaste","totalTimeInSeconds":null,"ingredients":["part-skim
+        mozzarella cheese","tomato sauce","salt","pepper","egg","grated parmesan cheese","(10
+        oz.) frozen chopped spinach","lasagna noodles","fat-free ricotta cheese"],"recipeName":"Spinach
+        Lasagna Rolls"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.0,"sweet":0.5,"bitter":0.5,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Easy-Lasagna-Ii-Allrecipes","smallImageUrls":["http://i.yummly.com/Easy-Lasagna-Ii-Allrecipes-1.s.jpg","http://i.yummly.com/Easy-Lasagna-Ii-Allrecipes-60796.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":5100.0,"ingredients":["parsley","shredded
+        mozzarella cheese","black pepper","lean ground beef","eggs","water","lasagna
+        noodles","cottage cheese","spaghetti sauce","salt","grated parmesan cheese"],"recipeName":"Easy
+        Lasagna II"},{"attributes":{"course":["Main Dishes"]},"flavors":null,"rating":5,"id":"Easy-skillet-lasagna-333225","smallImageUrls":["http://i.yummly.com/Easy-skillet-lasagna-333225-295145.s.jpg"],"sourceDisplayName":"How
+        Sweet It Is","totalTimeInSeconds":null,"ingredients":["sweet onion","crushed
+        tomatoes","unsalted butter","olive oil","lean ground beef","fresh basil leaves","whole
+        wheat lasagna noodles","ricotta cheese","parmesan cheese","basil","pepper","fresh
+        mozzarella cheese","garlic cloves","salt"],"recipeName":"Easy Skillet Lasagna"}],"criteria":{"requirePictures":false,"excludedIngredients":[],"allowedIngredients":[],"terms":["lasagna"],"facetFields":[],"resultsToSkip":0,"maxResults":6}}'
+    http_version: 
+  recorded_at: Wed, 10 Jul 2013 15:47:10 GMT
+- request:
+    method: get
+    uri: http://api.yummly.com/v1/api/recipes?_app_id=4b0aee5d&_app_key=53ec12be3b85d0086a735dba82e215e2&q=lasagna&requirePictures=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=1800, public
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 10 Jul 2013 18:07:49 GMT
+      Expires:
+      - Wed, 10 Jul 2013 18:37:53 GMT
+      Server:
+      - nginx
+      X-Yummly-Request-Id:
+      - 99d9cff7-b63d-4e3c-bd5e-3348a690d98a
+      Content-Length:
+      - '26825'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"attribution":{"html":"<a href=''http://www.yummly.com/recipes/lasagna''>lasagna
+        recipes</a> search powered by <img alt=''Yummly'' src=''http://static.yummly.com/api-logo.png''/>","url":"http://www.yummly.com/recipes/lasagna","text":"lasagna
+        recipes: search powered by Yummly","logo":"http://static.yummly.com/api-logo.png"},"totalMatchCount":1247,"facetCounts":{},"matches":[{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.5,"sweet":0.8333333333333334,"bitter":0.8333333333333334,"meaty":1.0,"piquant":0.0},"rating":5,"id":"World_s-Best-Lasagna-Allrecipes","smallImageUrls":["http://i2.yummly.com/World_s-Best-Lasagna-Allrecipes-1.s.png","http://i.yummly.com/World_s-Best-Lasagna-Allrecipes-68573.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":11700.0,"ingredients":["black
+        pepper","minced onion","fresh parsley","tomato paste","white sugar","ricotta
+        cheese","italian seasoning","basil leaves","crushed tomatoes","salt","fennel
+        seeds","mozzarella cheese","grated parmesan cheese","water","lean ground beef","tomato
+        sauce","egg","crushed garlic","sweet italian sausage","lasagna noodles","salt"],"recipeName":"World''s
+        Best Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.6666666666666666,"sweet":0.5,"bitter":0.8333333333333334,"meaty":0.6666666666666666,"piquant":0.0},"rating":5,"id":"White-Cheese-Chicken-Lasagna-Allrecipes","smallImageUrls":["http://i2.yummly.com/White-Cheese-Chicken-Lasagna-Allrecipes-2.s.png","http://i.yummly.com/White-Cheese-Chicken-Lasagna-Allrecipes-73236.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":4500.0,"ingredients":["dried
+        oregano","milk","lasagna noodles","spinach","salt","shredded mozzarella cheese","grated
+        parmesan cheese","chicken meat","chicken broth","dried basil","ricotta cheese","butter","fresh
+        parsley","all-purpose flour","grated parmesan cheese","clove garlic","onion","black
+        pepper"],"recipeName":"White Cheese Chicken Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.0,"sweet":0.16666666666666666,"bitter":0.8333333333333334,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Slow-cooker-pesto-spinach-lasagna-310218","smallImageUrls":["http://i.yummly.com/Slow-cooker-pesto-spinach-lasagna-310218-274671.s.jpg"],"sourceDisplayName":"A
+        Year of Slow Cooking","totalTimeInSeconds":null,"ingredients":["lasagna noodles","prepared
+        pasta sauce","mozzarella cheese","grated parmesan cheese","pesto","water","ricotta
+        cheese","baby spinach"],"recipeName":"Slow Cooker Pesto Spinach Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.16666666666666666,"sweet":0.8333333333333334,"bitter":0.8333333333333334,"meaty":0.8333333333333334,"piquant":0.0},"rating":5,"id":"Spinach-Lasagna-Iii-Allrecipes","smallImageUrls":["http://i.yummly.com/Spinach-Lasagna-Iii-Allrecipes-81019.s.png","http://i.yummly.com/Spinach-Lasagna-Iii-Allrecipes-80965.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":6600.0,"ingredients":["shredded
+        mozzarella cheese","dried oregano","pasta sauce","romano cheese","lasagna
+        noodles","onion","black pepper","grated parmesan cheese","ricotta cheese","olive
+        oil","fresh mushrooms","egg","minced garlic","basil leaves","spinach","salt"],"recipeName":"Spinach
+        Lasagna III"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.16666666666666666,"sour":0.16666666666666666,"sweet":0.16666666666666666,"bitter":0.16666666666666666,"meaty":0.16666666666666666,"piquant":0.0},"rating":5,"id":"Vegetable-Lasagna-The-Pioneer-Woman-Cooks-_-Ree-Drummond-41176","smallImageUrls":["http://i.yummly.com/Vegetable-Lasagna-The-Pioneer-Woman-Cooks-_-Ree-Drummond-41176-1697.s.jpg","http://i.yummly.com/Vegetable-Lasagna-The-Pioneer-Woman-Cooks-_-Ree-Drummond-41176-1384.s.jpg","http://i.yummly.com/Vegetable-Lasagna-The-Pioneer-Woman-Cooks-_-Ree-Drummond-41176-35.s.jpg"],"sourceDisplayName":"The
+        Pioneer Woman","totalTimeInSeconds":null,"ingredients":["red bell pepper","tomatoes","parmesan
+        cheese","red pepper flakes","white wines","lasagna noodles","mozzarella cheese","ricotta
+        cheese","parmesan","kosher salt","kosher salt","fresh parsley","white mushrooms","onions","olive
+        oil","garlic cloves","yellow squashes","black pepper","eggs"],"recipeName":"Vegetable
+        Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.5,"sweet":0.8333333333333334,"bitter":0.6666666666666666,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Linda_s-Lasagna-Allrecipes","smallImageUrls":["http://i2.yummly.com/Linda_s-Lasagna-Allrecipes.s.png","http://i.yummly.com/Linda_s-Lasagna-Allrecipes-79954.s.png","http://i.yummly.com/Linda_s-Lasagna-Allrecipes-79932.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":9000.0,"ingredients":["tomato
+        paste","dried oregano","egg","water","shredded mozzarella cheese","cottage
+        cheese","grated parmesan cheese","onion","salt","black pepper","lean ground
+        beef","lasagna noodles","garlic powder","crushed tomatoes","white sugar"],"recipeName":"Linda''s
+        Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.8333333333333334,"sweet":0.8333333333333334,"bitter":0.8333333333333334,"meaty":0.6666666666666666,"piquant":0.0},"rating":5,"id":"Deep-Dish-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Deep-Dish-Lasagna-Allrecipes-50502.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":6600.0,"ingredients":["part
+        skim ricotta cheese","water","lasagna noodles","garlic salt","tomato paste","italian
+        seasoning","dried oregano","eggs","tomato sauce","basil leaves","grated parmesan
+        cheese","sweet italian sausage","black pepper","fresh parsley","shredded mozzarella
+        cheese","minced garlic","onions","spinach"],"recipeName":"Deep Dish Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.8333333333333334,"sweet":0.5,"bitter":0.8333333333333334,"meaty":0.8333333333333334,"piquant":0.6666666666666666},"rating":5,"id":"Veggie-lasagna-335101","smallImageUrls":["http://i.yummly.com/Veggie-lasagna-335101-297905.s.jpg"],"sourceDisplayName":"Baked
+        Bree","totalTimeInSeconds":null,"ingredients":["onion","pepper","flat leaf
+        parsley","dried basil","red pepper flakes","olive oil","romano","dried oregano","lasagna
+        noodles","parmesan cheese","mozzarella cheese","ricotta cheese","mushrooms","red
+        peppers","baby spinach","peppers","salt","garlic","egg"],"recipeName":"Veggie
+        Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.6666666666666666,"sweet":0.8333333333333334,"bitter":0.6666666666666666,"meaty":0.8333333333333334,"piquant":0.0},"rating":5,"id":"American-Lasagna-Allrecipes","smallImageUrls":["http://i2.yummly.com/American-Lasagna-Allrecipes.s.png","http://i.yummly.com/American-Lasagna-Allrecipes-62433.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":7200.0,"ingredients":["salt","fresh
+        basil","grated parmesan cheese","diced tomatoes","lasagna noodles","dried
+        oregano","parsley","shredded mozzarella cheese","minced garlic","onion","brown
+        sugar","grated parmesan cheese","tomato paste","part skim ricotta cheese","beaten
+        eggs","lean ground beef","salt"],"recipeName":"American Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.6666666666666666,"sweet":0.6666666666666666,"bitter":0.8333333333333334,"meaty":0.8333333333333334,"piquant":0.0},"rating":4,"id":"Crock-Pot-Lasagna-Recipezaar_4","smallImageUrls":["http://i2.yummly.com/Crock-Pot-Lasagna-Recipezaar_4.s.png","http://i.yummly.com/Crock-Pot-Lasagna-Recipezaar_4-306012.s.jpg"],"sourceDisplayName":"Food.com","totalTimeInSeconds":1140.0,"ingredients":["dried
+        oregano","shredded mozzarella cheese","lasagna noodles","lean ground beef","cottage
+        cheese","garlic cloves","grated parmesan cheese","onion","tomato paste","salt","tomato
+        sauce"],"recipeName":"Crock Pot Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.5,"sour":0.8333333333333334,"sweet":0.16666666666666666,"bitter":0.3333333333333333,"meaty":0.3333333333333333,"piquant":0.5},"rating":5,"id":"Simple-Spinach-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Simple-Spinach-Lasagna-Allrecipes-94503.s.png","http://i.yummly.com/Simple-Spinach-Lasagna-Allrecipes-93686.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":6000.0,"ingredients":["black
+        pepper","shredded mozzarella cheese","egg","water","extra virgin olive oil","dried
+        oregano","fresh parsley","lasagna noodles","spaghetti sauce","spinach","onion","salt","dried
+        basil","grated parmesan cheese","crushed garlic","non-fat cottage cheese"],"recipeName":"Simple
+        Spinach Lasagna"},{"attributes":{},"flavors":{"salty":0.5,"sour":0.6666666666666666,"sweet":0.3333333333333333,"bitter":0.6666666666666666,"meaty":0.8333333333333334,"piquant":0.0},"rating":5,"id":"Eggplant-zucchini-lasagna-with-fontina-310201","smallImageUrls":["http://i.yummly.com/Eggplant-zucchini-lasagna-with-fontina-310201-274654.s.jpg"],"sourceDisplayName":"Big
+        Girls Small Kitchen","totalTimeInSeconds":null,"ingredients":["lasagna noodles","freshly
+        grated parmesan","fontina","olive oil","ricotta","zucchini","dried oregano","eggplant","plum
+        tomatoes","garlic","kosher salt"],"recipeName":"Eggplant-Zucchini Lasagna
+        with Fontina"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.3333333333333333,"sweet":0.8333333333333334,"bitter":0.8333333333333334,"meaty":0.3333333333333333,"piquant":0.0},"rating":4,"id":"Slow-Cooker-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Slow-Cooker-Lasagna-Allrecipes-74952.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":15000.0,"ingredients":["ricotta
+        cheese","lasagna noodles","shredded mozzarella cheese","pasta sauce","parsley","roll"],"recipeName":"Slow
+        Cooker Lasagna"},{"attributes":{"course":["Main Dishes","Soups"],"cuisine":["Italian"]},"flavors":null,"rating":5,"id":"Sausage-lasagna-soup-350847","smallImageUrls":["http://i.yummly.com/Sausage-lasagna-soup-350847-341658.s.jpg"],"sourceDisplayName":"Cinnamon
+        Girl","totalTimeInSeconds":660.0,"ingredients":["garlic","green bell pepper","mozzarella
+        cheese","fresh parsley","diced tomatoes","sea salt","ricotta cheese","chicken
+        broth","black pepper","sea salt","olive oil","yellow onion","italian sausage","tomato
+        paste","lasagna noodles","dried oregano","italian seasoning","parmesan cheese","dried
+        thyme","black pepper"],"recipeName":"Sausage Lasagna Soup"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.3333333333333333,"sour":0.0,"sweet":0.16666666666666666,"bitter":0.3333333333333333,"meaty":0.6666666666666666,"piquant":0.0},"rating":5,"id":"Miracle-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Miracle-Lasagna-Allrecipes-90732.s.png","http://i.yummly.com/Miracle-Lasagna-Allrecipes-90266.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":4200.0,"ingredients":["ricotta
+        cheese","shredded mozzarella cheese","lasagna noodles","traditional italian
+        sauce","grated parmesan cheese"],"recipeName":"Miracle Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.3333333333333333,"sour":0.5,"sweet":0.5,"bitter":0.3333333333333333,"meaty":0.8333333333333334,"piquant":0.0},"rating":5,"id":"Extra_easy-Lasagna-My-Recipes","smallImageUrls":["http://i.yummly.com/Extra_easy-Lasagna-My-Recipes-122047.s.png"],"sourceDisplayName":"MyRecipes","totalTimeInSeconds":null,"ingredients":["lasagna
+        noodles","tomato","ricotta cheese","shredded mozzarella cheese","hot water","lean
+        ground beef"],"recipeName":"Extra-Easy Lasagna"},{"attributes":{},"flavors":{"salty":0.16666666666666666,"sour":0.3333333333333333,"sweet":0.0,"bitter":0.16666666666666666,"meaty":0.3333333333333333,"piquant":0.0},"rating":5,"id":"Mushroom-lasagna-305429","smallImageUrls":["http://i.yummly.com/Mushroom-lasagna-305429-268883.s.jpg"],"sourceDisplayName":"Smitten
+        Kitchen","totalTimeInSeconds":null,"ingredients":["all-purpose flour","freshly
+        grated parmesan","cremini mushrooms","salt","ground black pepper","lasagna
+        noodles","ground nutmeg","olive oil","whole milk","unsalted butter","garlic"],"recipeName":"Mushroom
+        Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.5,"sour":0.0,"sweet":0.16666666666666666,"bitter":0.5,"meaty":1.0,"piquant":0.0},"rating":4,"id":"Hearty-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Hearty-Lasagna-Allrecipes-88803.s.png","http://i.yummly.com/Hearty-Lasagna-Allrecipes-88447.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":4200.0,"ingredients":["eggs","ground
+        beef","shredded mozzarella cheese","grated parmesan cheese","ricotta cheese","lasagna
+        noodles","traditional italian sauce"],"recipeName":"Hearty Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":null,"rating":5,"id":"Eggplant-parmesan-lasagna-348410","smallImageUrls":["http://i.yummly.com/Eggplant-parmesan-lasagna-348410-313048.s.jpg"],"sourceDisplayName":"Every
+        Day with Rachael Ray","totalTimeInSeconds":null,"ingredients":["cottage cheese","lasagna
+        noodles","large egg","fat","grated parmesan cheese","italian eggplants","garlic","pepper","diced
+        tomatoes","part skim mozzarella cheese","salt","extra virgin olive oil"],"recipeName":"Eggplant
+        Parmesan Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.0,"sweet":0.16666666666666666,"bitter":0.8333333333333334,"meaty":1.0,"piquant":0.0},"rating":4,"id":"Deadly-Delicious-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Deadly-Delicious-Lasagna-Allrecipes-65097.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":4200.0,"ingredients":["ricotta
+        cheese","spaghetti sauce","pork sausage","spinach","lasagna noodles","shredded
+        mozzarella cheese","grated parmesan cheese"],"recipeName":"Deadly Delicious
+        Lasagna"},{"attributes":{"course":["Main Dishes"]},"flavors":null,"rating":5,"id":"Turkey-_or-chicken_-lasagna-with-sage-and-three-cheeses-309942","smallImageUrls":["http://i.yummly.com/Turkey-_or-chicken_-lasagna-with-sage-and-three-cheeses-309942-346234.s.jpg","http://i.yummly.com/Turkey-_or-chicken_-lasagna-with-sage-and-three-cheeses-309942-274395.s.jpg"],"sourceDisplayName":"Kalyn''s
+        Kitchen","totalTimeInSeconds":null,"ingredients":["onion powder","low fat
+        cheddar cheese","low fat mozzarella cheese","homemade turkey stock","chopped
+        fresh sage","reduced-fat sour cream","lasagna noodles","cooked turkey","grated
+        parmesan cheese","garlic powder","turkey gravy"],"recipeName":"Turkey (or
+        chicken) Lasagna with Sage and Three Cheeses"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.8333333333333334,"sweet":0.6666666666666666,"bitter":0.8333333333333334,"meaty":0.5,"piquant":0.0},"rating":5,"id":"Meatball-Lasagna-TasteOfHome","smallImageUrls":["http://i.yummly.com/Meatball-Lasagna-Allrecipes-75370.s.png"],"sourceDisplayName":"Taste
+        of Home","totalTimeInSeconds":4800.0,"ingredients":["ricotta cheese","garlic
+        salt","shredded mozzarella cheese","parsley flakes","diced tomatoes","tomato
+        paste","cooked meatballs","grated parmesan cheese","dried basil","tomato sauce","water","egg","onion","lasagna
+        noodles","garlic clove","sugar"],"recipeName":"Meatball Lasagna"},{"attributes":{},"flavors":null,"rating":5,"id":"Creamy-artichoke-lasagna-bake-recipe-306934","smallImageUrls":["http://i.yummly.com/Creamy-artichoke-lasagna-bake-recipe-306934-270667.s.jpg"],"sourceDisplayName":"Food
+        Republic","totalTimeInSeconds":null,"ingredients":["egg","artichoke hearts","ricotta
+        cheese","parmesan cheese","garlic","salt","chicken broth","pine nuts","olive
+        oil","fresh basil","half-and-half","all-purpose flour","lasagna noodles"],"recipeName":"Creamy
+        Artichoke Lasagna Bake Recipe"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.3333333333333333,"sour":0.0,"sweet":0.0,"bitter":0.16666666666666666,"meaty":0.6666666666666666,"piquant":0.0},"rating":5,"id":"Extra_easy-Spinach-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Extra_easy-Spinach-Lasagna-Allrecipes-89471.s.png","http://i.yummly.com/Extra_easy-Spinach-Lasagna-Allrecipes-89111.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":4800.0,"ingredients":["shredded
+        mozzarella cheese","spinach","italian mushroom","lasagna noodles","water","ricotta
+        cheese"],"recipeName":"Extra-Easy Spinach Lasagna"},{"attributes":{"course":["Main
+        Dishes"]},"flavors":null,"rating":5,"id":"Portobello-lasagna-with-basil-cream-348864","smallImageUrls":["http://i.yummly.com/Portobello-lasagna-with-basil-cream-348864-313559.s.jpg"],"sourceDisplayName":"Every
+        Day with Rachael Ray","totalTimeInSeconds":null,"ingredients":["portobello
+        mushroom","onions","heavy cream","basil","grated parmesan cheese","flour","milk","salt","cloves","pepper","lasagna
+        noodles","butter"],"recipeName":"Portobello Lasagna with Basil Cream"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.5,"sweet":0.6666666666666666,"bitter":0.8333333333333334,"meaty":0.8333333333333334,"piquant":0.0},"rating":4,"id":"Slow-Cooker-Lasagna-Allrecipes_1","smallImageUrls":["http://i.yummly.com/Slow-Cooker-Lasagna-Allrecipes_1-67301.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":16800.0,"ingredients":["dried
+        oregano","shredded mozzarella cheese","grated parmesan cheese","lean ground
+        beef","lasagna noodles","minced garlic","cottage cheese","onion","tomato paste","salt","tomato
+        sauce"],"recipeName":"Slow Cooker Lasagna"},{"attributes":{},"flavors":{"salty":0.6666666666666666,"sour":0.8333333333333334,"sweet":0.6666666666666666,"bitter":1.0,"meaty":0.5,"piquant":0.0},"rating":5,"id":"Vegetarian-spinach-and-mushroom-lasagna-305001","smallImageUrls":["http://i.yummly.com/Vegetarian-spinach-and-mushroom-lasagna-305001-268646.s.jpg"],"sourceDisplayName":"Simply
+        Recipes","totalTimeInSeconds":null,"ingredients":["olive oil","tomato sauce","shredded
+        mozzarella cheese","sugar","crushed tomatoes","cremini mushrooms","pecorino
+        cheese","frozen chopped spinach","ricotta cheese","dried thyme","fresh basil","water","garlic","salt","shiitake
+        mushrooms","onions","tomato paste","red pepper flakes","lasagna noodles"],"recipeName":"Vegetarian
+        Spinach and Mushroom Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.3333333333333333,"sweet":0.8333333333333334,"bitter":0.6666666666666666,"meaty":0.16666666666666666,"piquant":0.0},"rating":5,"id":"Artichoke-Spinach-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Artichoke-Spinach-Lasagna-Allrecipes-3.s.jpg","http://i.yummly.com/Artichoke-Spinach-Lasagna-Allrecipes-74210.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":4800.0,"ingredients":["artichoke
+        hearts","crumbles","shredded mozzarella cheese","cooking spray","spinach","onion","pasta
+        sauce","lasagna noodles","vegetable broth","fresh rosemary","chopped garlic"],"recipeName":"Artichoke
+        Spinach Lasagna"},{"attributes":{"course":["Main Dishes"]},"flavors":null,"rating":5,"id":"Asparagus-ham-lasagna-348765","smallImageUrls":["http://i.yummly.com/Asparagus-ham-lasagna-348765-313443.s.jpg"],"sourceDisplayName":"Every
+        Day with Rachael Ray","totalTimeInSeconds":null,"ingredients":["grated parmesan
+        cheese","baked ham","salt","asparagus","grated nutmeg","butter","pepper","lasagna
+        noodles","flour","milk","onion"],"recipeName":"Asparagus-Ham Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.5,"sour":0.3333333333333333,"sweet":0.3333333333333333,"bitter":0.5,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Alysia_s-Basic-Meat-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Alysia_s-Basic-Meat-Lasagna-Allrecipes-92335.s.png","http://i.yummly.com/Alysia_s-Basic-Meat-Lasagna-Allrecipes-91677.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":5700.0,"ingredients":["dried
+        oregano","provolone cheese","lasagna noodles","diced onion","ground beef","tomato
+        sauce","eggs","grated parmesan cheese","minced garlic","garlic powder","spaghetti
+        sauce","milk","dried oregano","ricotta cheese","olive oil","shredded mozzarella
+        cheese"],"recipeName":"Alysia''s Basic Meat Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":null,"rating":5,"id":"Slow-cooker-lasagna-335608","smallImageUrls":["http://i.yummly.com/Slow-cooker-lasagna-335608-298416.s.jpg"],"sourceDisplayName":"Baked
+        Bree","totalTimeInSeconds":null,"ingredients":["pepper","dried basil","flat-leaf
+        parsley","salt","shredded mozzarella","lasagna noodles","ricotta cheese","garlic","egg","parmesan","dried
+        oregano","spaghetti sauce"],"recipeName":"Slow Cooker Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.5,"sour":0.6666666666666666,"sweet":0.16666666666666666,"bitter":0.5,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Chicken-And-Spinach-Alfredo-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Chicken-And-Spinach-Alfredo-Lasagna-Allrecipes-99206.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":7200.0,"ingredients":["cream
+        of mushroom soup","olive oil","ricotta cheese","butter","shredded mozzarella
+        cheese","salt","black pepper","heavy cream","garlic","mushrooms","lasagna
+        noodles","spinach","diced onion","grated parmesan cheese","roasted chicken"],"recipeName":"Chicken
+        and Spinach Alfredo Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.16666666666666666,"sour":0.5,"sweet":0.5,"bitter":0.3333333333333333,"meaty":0.5,"piquant":0.5},"rating":5,"id":"Mushroom-Lasagna-Serious-Eats-200809","smallImageUrls":["http://i.yummly.com/Mushroom-Lasagna-Serious-Eats-200809-40601.s.png"],"sourceDisplayName":"Serious
+        Eats","totalTimeInSeconds":null,"ingredients":["portobello mushrooms","all-purpose
+        flour","lasagna noodles","ground nutmeg","garlic clove","black pepper","parmesan","olive
+        oil","milk","unsalted butter"],"recipeName":"Mushroom Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.5,"sweet":0.6666666666666666,"bitter":0.8333333333333334,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Classic-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Classic-Lasagna-Allrecipes-3.s.jpg","http://i.yummly.com/Classic-Lasagna-Allrecipes-98063.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":7200.0,"ingredients":["beaten
+        eggs","tomato sauce","grated parmesan cheese","dried thyme","lasagna noodles","italian
+        sausage","pepper","shredded mozzarella cheese","dried oregano","olive oil","ground
+        beef","ricotta cheese","sliced mushrooms","salt","garlic salt","dried basil"],"recipeName":"Classic
+        Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.6666666666666666,"sour":0.3333333333333333,"sweet":0.3333333333333333,"bitter":0.5,"meaty":0.8333333333333334,"piquant":0.5},"rating":5,"id":"Roasted-Vegetable-Lasagna-TasteOfHome","smallImageUrls":["http://i.yummly.com/Roasted-Vegetable-Lasagna-Allrecipes-1.s.jpg","http://i.yummly.com/Roasted-Vegetable-Lasagna-Allrecipes-82553.s.png","http://i.yummly.com/Roasted-Vegetable-Lasagna-Allrecipes-82423.s.png"],"sourceDisplayName":"Taste
+        of Home","totalTimeInSeconds":5700.0,"ingredients":["zucchini","minced garlic","lasagna
+        noodles","olive oil","fresh basil","egg substitute","spaghetti sauce","fresh
+        mushrooms","pepper","reduced fat ricotta cheese","eggplant","part-skim mozzarella
+        cheese","salt","red pepper","grated parmesan cheese"],"recipeName":"Roasted
+        Vegetable Lasagna"},{"attributes":{"course":["Main Dishes"]},"flavors":null,"rating":5,"id":"Meat-lasagna-347300","smallImageUrls":["http://i.yummly.com/Meat-lasagna-347300-311756.s.jpg"],"sourceDisplayName":"Every
+        Day with Rachael Ray","totalTimeInSeconds":null,"ingredients":["salt","lasagna
+        noodles","flour","fresh basil leaves","sweet italian sausage","garlic","eggs","italian
+        tomatoes","parmigiano reggiano cheese","milk","butter","ricotta cheese","mozzarella
+        cheese","pepper"],"recipeName":"Meat Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.16666666666666666,"sweet":0.6666666666666666,"bitter":0.8333333333333334,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Lasagna-Roll-Ups-Allrecipes","smallImageUrls":["http://i.yummly.com/Lasagna-Roll-Ups-Allrecipes-53235.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":3600.0,"ingredients":["ricotta
+        cheese","firm tofu","shredded mozzarella cheese","pasta sauce","lasagna noodles","grated
+        parmesan cheese","spinach"],"recipeName":"Lasagna Roll Ups"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":null,"rating":5,"id":"Spinach-lasagna-rolls-352461","smallImageUrls":["http://i.yummly.com/Spinach-lasagna-rolls-352461-343476.s.jpg"],"sourceDisplayName":"Skinnytaste","totalTimeInSeconds":null,"ingredients":["fat-free
+        ricotta cheese","tomato sauce","salt","egg","(10 oz.) frozen chopped spinach","pepper","part-skim
+        mozzarella cheese","lasagna noodles","grated parmesan cheese"],"recipeName":"Spinach
+        Lasagna Rolls"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.0,"sweet":0.5,"bitter":0.5,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Easy-Lasagna-Ii-Allrecipes","smallImageUrls":["http://i.yummly.com/Easy-Lasagna-Ii-Allrecipes-1.s.jpg","http://i.yummly.com/Easy-Lasagna-Ii-Allrecipes-60796.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":5100.0,"ingredients":["parsley","water","lasagna
+        noodles","lean ground beef","salt","cottage cheese","black pepper","spaghetti
+        sauce","eggs","grated parmesan cheese","shredded mozzarella cheese"],"recipeName":"Easy
+        Lasagna II"},{"attributes":{"course":["Main Dishes"]},"flavors":null,"rating":5,"id":"Easy-skillet-lasagna-333225","smallImageUrls":["http://i.yummly.com/Easy-skillet-lasagna-333225-295145.s.jpg"],"sourceDisplayName":"How
+        Sweet It Is","totalTimeInSeconds":null,"ingredients":["salt","basil","lean
+        ground beef","fresh basil leaves","olive oil","unsalted butter","ricotta cheese","sweet
+        onion","crushed tomatoes","pepper","whole wheat lasagna noodles","fresh mozzarella
+        cheese","parmesan cheese","garlic cloves"],"recipeName":"Easy Skillet Lasagna"}],"criteria":{"requirePictures":true,"excludedIngredients":[],"allowedIngredients":[],"terms":["lasagna"],"facetFields":[],"resultsToSkip":0,"maxResults":6}}'
+    http_version: 
+  recorded_at: Wed, 10 Jul 2013 18:07:52 GMT
+- request:
+    method: get
+    uri: http://api.yummly.com/v1/api/recipes?_app_id=006910f9&_app_key=18489ae5335488b2ce5f819b503a6337&q=lasagna&requirePictures=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=1800, public
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 10 Jul 2013 20:04:56 GMT
+      Expires:
+      - Wed, 10 Jul 2013 20:34:56 GMT
+      Server:
+      - nginx
+      X-Yummly-Request-Id:
+      - 7059e040-d18f-4db0-badd-0ca473b901b2
+      Content-Length:
+      - '26825'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"attribution":{"html":"<a href=''http://www.yummly.com/recipes/lasagna''>lasagna
+        recipes</a> search powered by <img alt=''Yummly'' src=''http://static.yummly.com/api-logo.png''/>","url":"http://www.yummly.com/recipes/lasagna","text":"lasagna
+        recipes: search powered by Yummly","logo":"http://static.yummly.com/api-logo.png"},"totalMatchCount":1247,"facetCounts":{},"matches":[{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.5,"sweet":0.8333333333333334,"bitter":0.8333333333333334,"meaty":1.0,"piquant":0.0},"rating":5,"id":"World_s-Best-Lasagna-Allrecipes","smallImageUrls":["http://i2.yummly.com/World_s-Best-Lasagna-Allrecipes-1.s.png","http://i.yummly.com/World_s-Best-Lasagna-Allrecipes-68573.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":11700.0,"ingredients":["black
+        pepper","minced onion","fresh parsley","tomato paste","white sugar","ricotta
+        cheese","italian seasoning","basil leaves","crushed tomatoes","salt","fennel
+        seeds","mozzarella cheese","grated parmesan cheese","water","lean ground beef","tomato
+        sauce","egg","crushed garlic","sweet italian sausage","lasagna noodles","salt"],"recipeName":"World''s
+        Best Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.6666666666666666,"sweet":0.5,"bitter":0.8333333333333334,"meaty":0.6666666666666666,"piquant":0.0},"rating":5,"id":"White-Cheese-Chicken-Lasagna-Allrecipes","smallImageUrls":["http://i2.yummly.com/White-Cheese-Chicken-Lasagna-Allrecipes-2.s.png","http://i.yummly.com/White-Cheese-Chicken-Lasagna-Allrecipes-73236.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":4500.0,"ingredients":["dried
+        oregano","milk","lasagna noodles","spinach","salt","shredded mozzarella cheese","grated
+        parmesan cheese","chicken meat","chicken broth","dried basil","ricotta cheese","butter","fresh
+        parsley","all-purpose flour","grated parmesan cheese","clove garlic","onion","black
+        pepper"],"recipeName":"White Cheese Chicken Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.0,"sweet":0.16666666666666666,"bitter":0.8333333333333334,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Slow-cooker-pesto-spinach-lasagna-310218","smallImageUrls":["http://i.yummly.com/Slow-cooker-pesto-spinach-lasagna-310218-274671.s.jpg"],"sourceDisplayName":"A
+        Year of Slow Cooking","totalTimeInSeconds":null,"ingredients":["lasagna noodles","prepared
+        pasta sauce","mozzarella cheese","grated parmesan cheese","pesto","water","ricotta
+        cheese","baby spinach"],"recipeName":"Slow Cooker Pesto Spinach Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.16666666666666666,"sweet":0.8333333333333334,"bitter":0.8333333333333334,"meaty":0.8333333333333334,"piquant":0.0},"rating":5,"id":"Spinach-Lasagna-Iii-Allrecipes","smallImageUrls":["http://i.yummly.com/Spinach-Lasagna-Iii-Allrecipes-81019.s.png","http://i.yummly.com/Spinach-Lasagna-Iii-Allrecipes-80965.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":6600.0,"ingredients":["shredded
+        mozzarella cheese","dried oregano","pasta sauce","romano cheese","lasagna
+        noodles","onion","black pepper","grated parmesan cheese","ricotta cheese","olive
+        oil","fresh mushrooms","egg","minced garlic","basil leaves","spinach","salt"],"recipeName":"Spinach
+        Lasagna III"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.16666666666666666,"sour":0.16666666666666666,"sweet":0.16666666666666666,"bitter":0.16666666666666666,"meaty":0.16666666666666666,"piquant":0.0},"rating":5,"id":"Vegetable-Lasagna-The-Pioneer-Woman-Cooks-_-Ree-Drummond-41176","smallImageUrls":["http://i.yummly.com/Vegetable-Lasagna-The-Pioneer-Woman-Cooks-_-Ree-Drummond-41176-1697.s.jpg","http://i.yummly.com/Vegetable-Lasagna-The-Pioneer-Woman-Cooks-_-Ree-Drummond-41176-1384.s.jpg","http://i.yummly.com/Vegetable-Lasagna-The-Pioneer-Woman-Cooks-_-Ree-Drummond-41176-35.s.jpg"],"sourceDisplayName":"The
+        Pioneer Woman","totalTimeInSeconds":null,"ingredients":["red bell pepper","tomatoes","parmesan
+        cheese","red pepper flakes","white wines","lasagna noodles","mozzarella cheese","ricotta
+        cheese","parmesan","kosher salt","kosher salt","fresh parsley","white mushrooms","onions","olive
+        oil","garlic cloves","yellow squashes","black pepper","eggs"],"recipeName":"Vegetable
+        Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.5,"sweet":0.8333333333333334,"bitter":0.6666666666666666,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Linda_s-Lasagna-Allrecipes","smallImageUrls":["http://i2.yummly.com/Linda_s-Lasagna-Allrecipes.s.png","http://i.yummly.com/Linda_s-Lasagna-Allrecipes-79954.s.png","http://i.yummly.com/Linda_s-Lasagna-Allrecipes-79932.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":9000.0,"ingredients":["tomato
+        paste","dried oregano","egg","water","shredded mozzarella cheese","cottage
+        cheese","grated parmesan cheese","onion","salt","black pepper","lean ground
+        beef","lasagna noodles","garlic powder","crushed tomatoes","white sugar"],"recipeName":"Linda''s
+        Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.8333333333333334,"sweet":0.8333333333333334,"bitter":0.8333333333333334,"meaty":0.6666666666666666,"piquant":0.0},"rating":5,"id":"Deep-Dish-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Deep-Dish-Lasagna-Allrecipes-50502.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":6600.0,"ingredients":["part
+        skim ricotta cheese","water","lasagna noodles","garlic salt","tomato paste","italian
+        seasoning","dried oregano","eggs","tomato sauce","basil leaves","grated parmesan
+        cheese","sweet italian sausage","black pepper","fresh parsley","shredded mozzarella
+        cheese","minced garlic","onions","spinach"],"recipeName":"Deep Dish Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.8333333333333334,"sweet":0.5,"bitter":0.8333333333333334,"meaty":0.8333333333333334,"piquant":0.6666666666666666},"rating":5,"id":"Veggie-lasagna-335101","smallImageUrls":["http://i.yummly.com/Veggie-lasagna-335101-297905.s.jpg"],"sourceDisplayName":"Baked
+        Bree","totalTimeInSeconds":null,"ingredients":["onion","pepper","flat leaf
+        parsley","dried basil","red pepper flakes","olive oil","romano","dried oregano","lasagna
+        noodles","parmesan cheese","mozzarella cheese","ricotta cheese","mushrooms","red
+        peppers","baby spinach","peppers","salt","garlic","egg"],"recipeName":"Veggie
+        Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.6666666666666666,"sweet":0.8333333333333334,"bitter":0.6666666666666666,"meaty":0.8333333333333334,"piquant":0.0},"rating":5,"id":"American-Lasagna-Allrecipes","smallImageUrls":["http://i2.yummly.com/American-Lasagna-Allrecipes.s.png","http://i.yummly.com/American-Lasagna-Allrecipes-62433.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":7200.0,"ingredients":["salt","fresh
+        basil","grated parmesan cheese","diced tomatoes","lasagna noodles","dried
+        oregano","parsley","shredded mozzarella cheese","minced garlic","onion","brown
+        sugar","grated parmesan cheese","tomato paste","part skim ricotta cheese","beaten
+        eggs","lean ground beef","salt"],"recipeName":"American Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.6666666666666666,"sweet":0.6666666666666666,"bitter":0.8333333333333334,"meaty":0.8333333333333334,"piquant":0.0},"rating":4,"id":"Crock-Pot-Lasagna-Recipezaar_4","smallImageUrls":["http://i2.yummly.com/Crock-Pot-Lasagna-Recipezaar_4.s.png","http://i.yummly.com/Crock-Pot-Lasagna-Recipezaar_4-306012.s.jpg"],"sourceDisplayName":"Food.com","totalTimeInSeconds":1140.0,"ingredients":["dried
+        oregano","shredded mozzarella cheese","lasagna noodles","lean ground beef","cottage
+        cheese","garlic cloves","grated parmesan cheese","onion","tomato paste","salt","tomato
+        sauce"],"recipeName":"Crock Pot Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.5,"sour":0.8333333333333334,"sweet":0.16666666666666666,"bitter":0.3333333333333333,"meaty":0.3333333333333333,"piquant":0.5},"rating":5,"id":"Simple-Spinach-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Simple-Spinach-Lasagna-Allrecipes-94503.s.png","http://i.yummly.com/Simple-Spinach-Lasagna-Allrecipes-93686.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":6000.0,"ingredients":["black
+        pepper","shredded mozzarella cheese","egg","water","extra virgin olive oil","dried
+        oregano","fresh parsley","lasagna noodles","spaghetti sauce","spinach","onion","salt","dried
+        basil","grated parmesan cheese","crushed garlic","non-fat cottage cheese"],"recipeName":"Simple
+        Spinach Lasagna"},{"attributes":{},"flavors":{"salty":0.5,"sour":0.6666666666666666,"sweet":0.3333333333333333,"bitter":0.6666666666666666,"meaty":0.8333333333333334,"piquant":0.0},"rating":5,"id":"Eggplant-zucchini-lasagna-with-fontina-310201","smallImageUrls":["http://i.yummly.com/Eggplant-zucchini-lasagna-with-fontina-310201-274654.s.jpg"],"sourceDisplayName":"Big
+        Girls Small Kitchen","totalTimeInSeconds":null,"ingredients":["lasagna noodles","freshly
+        grated parmesan","fontina","olive oil","ricotta","zucchini","dried oregano","eggplant","plum
+        tomatoes","garlic","kosher salt"],"recipeName":"Eggplant-Zucchini Lasagna
+        with Fontina"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.3333333333333333,"sweet":0.8333333333333334,"bitter":0.8333333333333334,"meaty":0.3333333333333333,"piquant":0.0},"rating":4,"id":"Slow-Cooker-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Slow-Cooker-Lasagna-Allrecipes-74952.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":15000.0,"ingredients":["ricotta
+        cheese","lasagna noodles","shredded mozzarella cheese","pasta sauce","parsley","roll"],"recipeName":"Slow
+        Cooker Lasagna"},{"attributes":{"course":["Main Dishes","Soups"],"cuisine":["Italian"]},"flavors":null,"rating":5,"id":"Sausage-lasagna-soup-350847","smallImageUrls":["http://i.yummly.com/Sausage-lasagna-soup-350847-341658.s.jpg"],"sourceDisplayName":"Cinnamon
+        Girl","totalTimeInSeconds":660.0,"ingredients":["garlic","green bell pepper","mozzarella
+        cheese","fresh parsley","diced tomatoes","sea salt","ricotta cheese","chicken
+        broth","black pepper","sea salt","olive oil","yellow onion","italian sausage","tomato
+        paste","lasagna noodles","dried oregano","italian seasoning","parmesan cheese","dried
+        thyme","black pepper"],"recipeName":"Sausage Lasagna Soup"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.3333333333333333,"sour":0.0,"sweet":0.16666666666666666,"bitter":0.3333333333333333,"meaty":0.6666666666666666,"piquant":0.0},"rating":5,"id":"Miracle-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Miracle-Lasagna-Allrecipes-90732.s.png","http://i.yummly.com/Miracle-Lasagna-Allrecipes-90266.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":4200.0,"ingredients":["ricotta
+        cheese","shredded mozzarella cheese","lasagna noodles","traditional italian
+        sauce","grated parmesan cheese"],"recipeName":"Miracle Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.3333333333333333,"sour":0.5,"sweet":0.5,"bitter":0.3333333333333333,"meaty":0.8333333333333334,"piquant":0.0},"rating":5,"id":"Extra_easy-Lasagna-My-Recipes","smallImageUrls":["http://i.yummly.com/Extra_easy-Lasagna-My-Recipes-122047.s.png"],"sourceDisplayName":"MyRecipes","totalTimeInSeconds":null,"ingredients":["lasagna
+        noodles","tomato","ricotta cheese","shredded mozzarella cheese","hot water","lean
+        ground beef"],"recipeName":"Extra-Easy Lasagna"},{"attributes":{},"flavors":{"salty":0.16666666666666666,"sour":0.3333333333333333,"sweet":0.0,"bitter":0.16666666666666666,"meaty":0.3333333333333333,"piquant":0.0},"rating":5,"id":"Mushroom-lasagna-305429","smallImageUrls":["http://i.yummly.com/Mushroom-lasagna-305429-268883.s.jpg"],"sourceDisplayName":"Smitten
+        Kitchen","totalTimeInSeconds":null,"ingredients":["all-purpose flour","freshly
+        grated parmesan","cremini mushrooms","salt","ground black pepper","lasagna
+        noodles","ground nutmeg","olive oil","whole milk","unsalted butter","garlic"],"recipeName":"Mushroom
+        Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.5,"sour":0.0,"sweet":0.16666666666666666,"bitter":0.5,"meaty":1.0,"piquant":0.0},"rating":4,"id":"Hearty-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Hearty-Lasagna-Allrecipes-88803.s.png","http://i.yummly.com/Hearty-Lasagna-Allrecipes-88447.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":4200.0,"ingredients":["eggs","ground
+        beef","shredded mozzarella cheese","grated parmesan cheese","ricotta cheese","lasagna
+        noodles","traditional italian sauce"],"recipeName":"Hearty Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":null,"rating":5,"id":"Eggplant-parmesan-lasagna-348410","smallImageUrls":["http://i.yummly.com/Eggplant-parmesan-lasagna-348410-313048.s.jpg"],"sourceDisplayName":"Every
+        Day with Rachael Ray","totalTimeInSeconds":null,"ingredients":["cottage cheese","lasagna
+        noodles","large egg","fat","grated parmesan cheese","italian eggplants","garlic","pepper","diced
+        tomatoes","part skim mozzarella cheese","salt","extra virgin olive oil"],"recipeName":"Eggplant
+        Parmesan Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.0,"sweet":0.16666666666666666,"bitter":0.8333333333333334,"meaty":1.0,"piquant":0.0},"rating":4,"id":"Deadly-Delicious-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Deadly-Delicious-Lasagna-Allrecipes-65097.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":4200.0,"ingredients":["ricotta
+        cheese","spaghetti sauce","pork sausage","spinach","lasagna noodles","shredded
+        mozzarella cheese","grated parmesan cheese"],"recipeName":"Deadly Delicious
+        Lasagna"},{"attributes":{"course":["Main Dishes"]},"flavors":null,"rating":5,"id":"Turkey-_or-chicken_-lasagna-with-sage-and-three-cheeses-309942","smallImageUrls":["http://i.yummly.com/Turkey-_or-chicken_-lasagna-with-sage-and-three-cheeses-309942-346234.s.jpg","http://i.yummly.com/Turkey-_or-chicken_-lasagna-with-sage-and-three-cheeses-309942-274395.s.jpg"],"sourceDisplayName":"Kalyn''s
+        Kitchen","totalTimeInSeconds":null,"ingredients":["onion powder","low fat
+        cheddar cheese","low fat mozzarella cheese","homemade turkey stock","chopped
+        fresh sage","reduced-fat sour cream","lasagna noodles","cooked turkey","grated
+        parmesan cheese","garlic powder","turkey gravy"],"recipeName":"Turkey (or
+        chicken) Lasagna with Sage and Three Cheeses"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.8333333333333334,"sweet":0.6666666666666666,"bitter":0.8333333333333334,"meaty":0.5,"piquant":0.0},"rating":5,"id":"Meatball-Lasagna-TasteOfHome","smallImageUrls":["http://i.yummly.com/Meatball-Lasagna-Allrecipes-75370.s.png"],"sourceDisplayName":"Taste
+        of Home","totalTimeInSeconds":4800.0,"ingredients":["ricotta cheese","garlic
+        salt","shredded mozzarella cheese","parsley flakes","diced tomatoes","tomato
+        paste","cooked meatballs","grated parmesan cheese","dried basil","tomato sauce","water","egg","onion","lasagna
+        noodles","garlic clove","sugar"],"recipeName":"Meatball Lasagna"},{"attributes":{},"flavors":null,"rating":5,"id":"Creamy-artichoke-lasagna-bake-recipe-306934","smallImageUrls":["http://i.yummly.com/Creamy-artichoke-lasagna-bake-recipe-306934-270667.s.jpg"],"sourceDisplayName":"Food
+        Republic","totalTimeInSeconds":null,"ingredients":["egg","artichoke hearts","ricotta
+        cheese","parmesan cheese","garlic","salt","chicken broth","pine nuts","olive
+        oil","fresh basil","half-and-half","all-purpose flour","lasagna noodles"],"recipeName":"Creamy
+        Artichoke Lasagna Bake Recipe"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.3333333333333333,"sour":0.0,"sweet":0.0,"bitter":0.16666666666666666,"meaty":0.6666666666666666,"piquant":0.0},"rating":5,"id":"Extra_easy-Spinach-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Extra_easy-Spinach-Lasagna-Allrecipes-89471.s.png","http://i.yummly.com/Extra_easy-Spinach-Lasagna-Allrecipes-89111.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":4800.0,"ingredients":["shredded
+        mozzarella cheese","spinach","italian mushroom","lasagna noodles","water","ricotta
+        cheese"],"recipeName":"Extra-Easy Spinach Lasagna"},{"attributes":{"course":["Main
+        Dishes"]},"flavors":null,"rating":5,"id":"Portobello-lasagna-with-basil-cream-348864","smallImageUrls":["http://i.yummly.com/Portobello-lasagna-with-basil-cream-348864-313559.s.jpg"],"sourceDisplayName":"Every
+        Day with Rachael Ray","totalTimeInSeconds":null,"ingredients":["portobello
+        mushroom","onions","heavy cream","basil","grated parmesan cheese","flour","milk","salt","cloves","pepper","lasagna
+        noodles","butter"],"recipeName":"Portobello Lasagna with Basil Cream"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.5,"sweet":0.6666666666666666,"bitter":0.8333333333333334,"meaty":0.8333333333333334,"piquant":0.0},"rating":4,"id":"Slow-Cooker-Lasagna-Allrecipes_1","smallImageUrls":["http://i.yummly.com/Slow-Cooker-Lasagna-Allrecipes_1-67301.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":16800.0,"ingredients":["dried
+        oregano","shredded mozzarella cheese","grated parmesan cheese","lean ground
+        beef","lasagna noodles","minced garlic","cottage cheese","onion","tomato paste","salt","tomato
+        sauce"],"recipeName":"Slow Cooker Lasagna"},{"attributes":{},"flavors":{"salty":0.6666666666666666,"sour":0.8333333333333334,"sweet":0.6666666666666666,"bitter":1.0,"meaty":0.5,"piquant":0.0},"rating":5,"id":"Vegetarian-spinach-and-mushroom-lasagna-305001","smallImageUrls":["http://i.yummly.com/Vegetarian-spinach-and-mushroom-lasagna-305001-268646.s.jpg"],"sourceDisplayName":"Simply
+        Recipes","totalTimeInSeconds":null,"ingredients":["olive oil","tomato sauce","shredded
+        mozzarella cheese","sugar","crushed tomatoes","cremini mushrooms","pecorino
+        cheese","frozen chopped spinach","ricotta cheese","dried thyme","fresh basil","water","garlic","salt","shiitake
+        mushrooms","onions","tomato paste","red pepper flakes","lasagna noodles"],"recipeName":"Vegetarian
+        Spinach and Mushroom Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.3333333333333333,"sweet":0.8333333333333334,"bitter":0.6666666666666666,"meaty":0.16666666666666666,"piquant":0.0},"rating":5,"id":"Artichoke-Spinach-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Artichoke-Spinach-Lasagna-Allrecipes-3.s.jpg","http://i.yummly.com/Artichoke-Spinach-Lasagna-Allrecipes-74210.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":4800.0,"ingredients":["artichoke
+        hearts","crumbles","shredded mozzarella cheese","cooking spray","spinach","onion","pasta
+        sauce","lasagna noodles","vegetable broth","fresh rosemary","chopped garlic"],"recipeName":"Artichoke
+        Spinach Lasagna"},{"attributes":{"course":["Main Dishes"]},"flavors":null,"rating":5,"id":"Asparagus-ham-lasagna-348765","smallImageUrls":["http://i.yummly.com/Asparagus-ham-lasagna-348765-313443.s.jpg"],"sourceDisplayName":"Every
+        Day with Rachael Ray","totalTimeInSeconds":null,"ingredients":["grated parmesan
+        cheese","baked ham","salt","asparagus","grated nutmeg","butter","pepper","lasagna
+        noodles","flour","milk","onion"],"recipeName":"Asparagus-Ham Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.5,"sour":0.3333333333333333,"sweet":0.3333333333333333,"bitter":0.5,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Alysia_s-Basic-Meat-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Alysia_s-Basic-Meat-Lasagna-Allrecipes-92335.s.png","http://i.yummly.com/Alysia_s-Basic-Meat-Lasagna-Allrecipes-91677.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":5700.0,"ingredients":["dried
+        oregano","provolone cheese","lasagna noodles","diced onion","ground beef","tomato
+        sauce","eggs","grated parmesan cheese","minced garlic","garlic powder","spaghetti
+        sauce","milk","dried oregano","ricotta cheese","olive oil","shredded mozzarella
+        cheese"],"recipeName":"Alysia''s Basic Meat Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":null,"rating":5,"id":"Slow-cooker-lasagna-335608","smallImageUrls":["http://i.yummly.com/Slow-cooker-lasagna-335608-298416.s.jpg"],"sourceDisplayName":"Baked
+        Bree","totalTimeInSeconds":null,"ingredients":["pepper","dried basil","flat-leaf
+        parsley","salt","shredded mozzarella","lasagna noodles","ricotta cheese","garlic","egg","parmesan","dried
+        oregano","spaghetti sauce"],"recipeName":"Slow Cooker Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.5,"sour":0.6666666666666666,"sweet":0.16666666666666666,"bitter":0.5,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Chicken-And-Spinach-Alfredo-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Chicken-And-Spinach-Alfredo-Lasagna-Allrecipes-99206.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":7200.0,"ingredients":["cream
+        of mushroom soup","olive oil","ricotta cheese","butter","shredded mozzarella
+        cheese","salt","black pepper","heavy cream","garlic","mushrooms","lasagna
+        noodles","spinach","diced onion","grated parmesan cheese","roasted chicken"],"recipeName":"Chicken
+        and Spinach Alfredo Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.16666666666666666,"sour":0.5,"sweet":0.5,"bitter":0.3333333333333333,"meaty":0.5,"piquant":0.5},"rating":5,"id":"Mushroom-Lasagna-Serious-Eats-200809","smallImageUrls":["http://i.yummly.com/Mushroom-Lasagna-Serious-Eats-200809-40601.s.png"],"sourceDisplayName":"Serious
+        Eats","totalTimeInSeconds":null,"ingredients":["portobello mushrooms","all-purpose
+        flour","lasagna noodles","ground nutmeg","garlic clove","black pepper","parmesan","olive
+        oil","milk","unsalted butter"],"recipeName":"Mushroom Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.5,"sweet":0.6666666666666666,"bitter":0.8333333333333334,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Classic-Lasagna-Allrecipes","smallImageUrls":["http://i.yummly.com/Classic-Lasagna-Allrecipes-3.s.jpg","http://i.yummly.com/Classic-Lasagna-Allrecipes-98063.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":7200.0,"ingredients":["beaten
+        eggs","tomato sauce","grated parmesan cheese","dried thyme","lasagna noodles","italian
+        sausage","pepper","shredded mozzarella cheese","dried oregano","olive oil","ground
+        beef","ricotta cheese","sliced mushrooms","salt","garlic salt","dried basil"],"recipeName":"Classic
+        Lasagna"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.6666666666666666,"sour":0.3333333333333333,"sweet":0.3333333333333333,"bitter":0.5,"meaty":0.8333333333333334,"piquant":0.5},"rating":5,"id":"Roasted-Vegetable-Lasagna-TasteOfHome","smallImageUrls":["http://i.yummly.com/Roasted-Vegetable-Lasagna-Allrecipes-1.s.jpg","http://i.yummly.com/Roasted-Vegetable-Lasagna-Allrecipes-82553.s.png","http://i.yummly.com/Roasted-Vegetable-Lasagna-Allrecipes-82423.s.png"],"sourceDisplayName":"Taste
+        of Home","totalTimeInSeconds":5700.0,"ingredients":["zucchini","minced garlic","lasagna
+        noodles","olive oil","fresh basil","egg substitute","spaghetti sauce","fresh
+        mushrooms","pepper","reduced fat ricotta cheese","eggplant","part-skim mozzarella
+        cheese","salt","red pepper","grated parmesan cheese"],"recipeName":"Roasted
+        Vegetable Lasagna"},{"attributes":{"course":["Main Dishes"]},"flavors":null,"rating":5,"id":"Meat-lasagna-347300","smallImageUrls":["http://i.yummly.com/Meat-lasagna-347300-311756.s.jpg"],"sourceDisplayName":"Every
+        Day with Rachael Ray","totalTimeInSeconds":null,"ingredients":["salt","lasagna
+        noodles","flour","fresh basil leaves","sweet italian sausage","garlic","eggs","italian
+        tomatoes","parmigiano reggiano cheese","milk","butter","ricotta cheese","mozzarella
+        cheese","pepper"],"recipeName":"Meat Lasagna"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":{"salty":1.0,"sour":0.16666666666666666,"sweet":0.6666666666666666,"bitter":0.8333333333333334,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Lasagna-Roll-Ups-Allrecipes","smallImageUrls":["http://i.yummly.com/Lasagna-Roll-Ups-Allrecipes-53235.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":3600.0,"ingredients":["ricotta
+        cheese","firm tofu","shredded mozzarella cheese","pasta sauce","lasagna noodles","grated
+        parmesan cheese","spinach"],"recipeName":"Lasagna Roll Ups"},{"attributes":{"course":["Main
+        Dishes"],"cuisine":["Italian"]},"flavors":null,"rating":5,"id":"Spinach-lasagna-rolls-352461","smallImageUrls":["http://i.yummly.com/Spinach-lasagna-rolls-352461-343476.s.jpg"],"sourceDisplayName":"Skinnytaste","totalTimeInSeconds":null,"ingredients":["fat-free
+        ricotta cheese","tomato sauce","salt","egg","(10 oz.) frozen chopped spinach","pepper","part-skim
+        mozzarella cheese","lasagna noodles","grated parmesan cheese"],"recipeName":"Spinach
+        Lasagna Rolls"},{"attributes":{"course":["Main Dishes"],"cuisine":["Italian"]},"flavors":{"salty":0.8333333333333334,"sour":0.0,"sweet":0.5,"bitter":0.5,"meaty":1.0,"piquant":0.0},"rating":5,"id":"Easy-Lasagna-Ii-Allrecipes","smallImageUrls":["http://i.yummly.com/Easy-Lasagna-Ii-Allrecipes-1.s.jpg","http://i.yummly.com/Easy-Lasagna-Ii-Allrecipes-60796.s.png"],"sourceDisplayName":"AllRecipes","totalTimeInSeconds":5100.0,"ingredients":["parsley","water","lasagna
+        noodles","lean ground beef","salt","cottage cheese","black pepper","spaghetti
+        sauce","eggs","grated parmesan cheese","shredded mozzarella cheese"],"recipeName":"Easy
+        Lasagna II"},{"attributes":{"course":["Main Dishes"]},"flavors":null,"rating":5,"id":"Easy-skillet-lasagna-333225","smallImageUrls":["http://i.yummly.com/Easy-skillet-lasagna-333225-295145.s.jpg"],"sourceDisplayName":"How
+        Sweet It Is","totalTimeInSeconds":null,"ingredients":["salt","basil","lean
+        ground beef","fresh basil leaves","olive oil","unsalted butter","ricotta cheese","sweet
+        onion","crushed tomatoes","pepper","whole wheat lasagna noodles","fresh mozzarella
+        cheese","parmesan cheese","garlic cloves"],"recipeName":"Easy Skillet Lasagna"}],"criteria":{"requirePictures":true,"excludedIngredients":[],"allowedIngredients":[],"terms":["lasagna"],"facetFields":[],"resultsToSkip":0,"maxResults":6}}'
+    http_version: 
+  recorded_at: Wed, 10 Jul 2013 20:04:55 GMT
+recorded_with: VCR 2.5.0

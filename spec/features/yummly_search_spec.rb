@@ -8,22 +8,41 @@ feature 'searching the yummly api', %q{
 
 	describe 'searching yummly' do
 
-		it 'has a input field to input search criteria' do 
+		before :each do 
 			visit root_path
-			expect(page).to have_content('Yummly')
+				fill_in 'yummly_yum', with: 'lasagna'
+				VCR.use_cassette('yummly_response') do 
+				Net::HTTP.get_response(URI("http://api.yummly.com/v1/api/recipes?_app_id=#{Yummly.app_id}&_app_key=#{Yummly.app_key}&q=lasagna"))
+				click_on 'Yummlys'
+			end
+		end
+
+		it 'lets the user input their search criteria' do 
+			expect(page).to have_content('Yummly Search Results')
+			expect(current_path).to eql(yummlys_path)
+		end
+
+		it 'lets the user view yummly results' do 
+			recipes = ["World's Best Lasagna","White Cheese Chicken Lasagna","Slow Cooker Pesto Spinach Lasagna","Deep Dish Lasagna"]
+			recipes.each do |recipe|
+				expect(page).to have_link('Yummly!')
+			end
+		end
+
+		it 'has a link to the recipe page on yummly' do 
+			expect(page).to have_link('Yummly!')
+			expect(page).to have_selector('img.recipe-image')
+			expect(page).to have_selector('a.btn.btn-success')
+		end
+
+		it 'has a list of ingredients on the page for recipes' do 
+			expect(page).to have_content('Ingredients:')
+			expect(page).to have_content('tomato paste')
+			expect(page).to have_content('egg')
+			expect(page).to have_content('Spinach Lasagna III')
 		end
 	end
 end
 
 
 
-
-
-# class VCRTest < Test::Unit::TestCase
-#   def test_example_dot_com
-#     VCR.use_cassette('yummly_response') do
-#       response = Net::HTTP.get_response(URI("http://api.yummly.com/v1/api/recipes?_app_id=#{Yummly.new.app_id}&_app_key=#{Yummly.new.app_key}&q=lasagna"))
-#       assert_match /Example Domains/, response.body
-#     end
-#   end
-# end

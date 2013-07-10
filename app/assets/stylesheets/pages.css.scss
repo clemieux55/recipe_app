@@ -8,6 +8,10 @@ div.welcome-sign-in {
 
 }
 
+div.recipe-description-container.btn-success{
+	padding:5px;
+}
+
 div.user-nav {
 	padding: 20px;
 }
@@ -25,6 +29,10 @@ div.chicken-image img {
 
 }
 
+div.recipe-description-container.img-recipe-image{
+	height:150px;
+	width:150px;
+}
 
 h1.row {
 	text-align: center;
@@ -78,7 +86,6 @@ h1 {
 div.inner-banner-row {
 	border-width: 3px;
 	border-style: solid dashed solid dashed;
-	background-color: #447294;
 	height:450px;
 	width: 100%;
 	padding: 30px;
@@ -92,5 +99,4 @@ div.inner-banner-row {
  .newest-recipes {
  	text-align:center;
  }
-
 
