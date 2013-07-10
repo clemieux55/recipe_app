@@ -22,10 +22,10 @@ class RecipeSeeder
 
 	def seed_database_with_recipes
 		recipes = @recipes
-		user = create_new_user
 
 		if Recipe.count == 0
-			recipes.each do |recipe|
+			recipes.each_with_index do |recipe, index|
+				user = create_new_user(index)
 				new_recipe = Recipe.new({ 
 																:title => recipe,
 																:description => 
@@ -39,9 +39,9 @@ class RecipeSeeder
 		end
 	end
 
-	def create_new_user
+	def create_new_user(index)
 		User.create!({ 
-									:email => 'emasl@ea9ljh4.com', 
+									:email => "emasl@ea#{index}ljh4.com", 
 									:password => 'password', 
 									:password_confirmation => 'password'
 								})
