@@ -1,5 +1,6 @@
 require 'json'
 require 'net/http'
+require 'cgi'
 
 	class Yummly
 
@@ -10,7 +11,7 @@ require 'net/http'
 	 	end
 
 	 	def attributes(query)
-	 		query.gsub!(/[,]/,"")
+	 		query.gsub!(/[,&^%$?~`]/,"")
 	 		query.gsub(/[ ]/,"+")
 	 	end
 
