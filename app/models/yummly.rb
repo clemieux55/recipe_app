@@ -7,12 +7,11 @@ require 'net/http'
 
 	 	def initialize(query)
 	 		@query = attributes(query)
-	 		binding.pry
 	 	end
 
 	 	def attributes(query)
-	 		query.gsub!(/[,]/,"+")
-	 		query.gsub(/[ ]/,"")
+	 		query.gsub!(/[,]/,"")
+	 		query.gsub(/[ ]/,"+")
 	 	end
 
 		def self.app_key
