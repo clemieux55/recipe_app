@@ -6,7 +6,13 @@ require 'net/http'
 	 	attr_accessor :response, :attributes
 
 	 	def initialize(query)
-	 		@query = query
+	 		@query = attributes(query)
+	 		binding.pry
+	 	end
+
+	 	def attributes(query)
+	 		query.gsub!(/[,]/,"+")
+	 		query.gsub(/[ ]/,"")
 	 	end
 
 		def self.app_key
@@ -35,6 +41,7 @@ require 'net/http'
 			response = Net::HTTP.get(uri)
 			JSON.parse(response)
 		end
+
 
 	end
 

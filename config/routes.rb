@@ -2,7 +2,8 @@ RecipeApp::Application.routes.draw do
   devise_for :users
 
   devise_scope :user do
-    get '/users/sign_out' => 'devise/sessions#destroy' 
+    get '/users/sign_out' => 'devise/sessions#destroy'
+    get 'users/sign_in' => 'pages#index'
   end
 
 resources :recipes do 
