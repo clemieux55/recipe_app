@@ -8,7 +8,6 @@ gem 'rails', '3.2.13'
 
 gem 'pg'
 gem 'devise'
-gem 'launchy'
 gem 'simple_form'
 gem 'ransack'
 gem 'kaminari'
@@ -36,6 +35,7 @@ group :test, :development do
   gem 'pry'
   gem 'shoulda-matchers'
   gem 'valid_attribute'
+  gem 'launchy'
 end
 
 group :test do 
