@@ -16,11 +16,11 @@ require 'cgi'
 	 	end
 
 		def self.app_key
-			@app_key = "18489ae5335488b2ce5f819b503a6337"
+			@app_key = "api_key"
 		end
 
 		def self.app_id
-			@app_id = "006910f9"
+			@app_id = "app_id"
 		end
 
 		def response
